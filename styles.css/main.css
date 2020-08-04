@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+
+	/* font-family: 'Rubik', sans-serif;
+ */
+}
+
+
+h1 {
+	text-align: center;
+    background-color: rgba(98, 201, 248, 0.5);
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 60px;
+	font-size: 20px;
+}
+
+
+.nav__ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(252, 155, 77, 0.5);
+	text-transform: uppercase;
+	line-height: 45px;
+
+}
+/* poner hover */
+/* hacer barra de navegacion fija */
+
+a {
+	text-decoration: none;
+	justify-content: space-between;
+	color: #fff;
+}
+
+.header__img {
+	background-image: url('../images/road.jpeg');
+	height: 421px;
+	margin-bottom: 30px;
+	background-size: cover;
+}
+
+p{
+	color: #000;
+	background-color: #fff;
+	font-family: open sans;
+	/*aquivafont-faceopensans-semibold*/font-size: 18px;
+	margin: 0 15px 30px 15px;
+	padding: 15px;
+	/* position: relative;
+	top:282px; */
+	transform: translate(0 282px) ;
+	-webkit-transform: translate(0, 282px) ;
+	-moz-transform: translate(0 282px) ;
+	-ms-transform: translate(0 282px) ;
+	-o-transform: translate(0 282px) ;
+}
+
+.a_return{
+    color: blue;
+}
+
+/* FOOTER */
+
+.footer__ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(252, 155, 77, 0.5);
+	text-transform: uppercase;
+	line-height: 45px;
+	color:#54585a
+
+}
+
+/* FORMULARIO */
+
+h1 {
+	text-align: center;
+    background-color: rgba(98, 201, 248, 0.5);
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 60px;
+	font-size: 20px;
+}
+
+
+.nav__ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(252, 155, 77, 0.5);
+	text-transform: uppercase;
+	line-height: 45px;
+}
+
+a {
+	text-decoration: none;
+	justify-content: space-between;
+	color: #fff;
+}
+
+.header__img-contact {
+	background-image: url('../images/keyboard.jpeg');
+	height: 421px;
+	margin-bottom: 30px;
+	background-size: cover;
+}
+
+
+
