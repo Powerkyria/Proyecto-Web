@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css/main.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-
-    <!-- poner las dos fuentes en un solo link -->
-    <!-- poner link de fontawesome con los iconos de las redes sociales -->
-    <!-- poner favicon para aprender a hacerlo -->
+    <link rel="icon" href="./images/logo4.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
 
     <title>Proyecto</title>
 </head>
@@ -19,77 +16,82 @@
 <body>
 
     <header class='header__img' id="top">
-        
+
         <h1>Powerkyria</h1>
 
         <nav class="header__nav">
-            <ul class="nav__ul">
-                <li><a href="#team" title='Equipo'>Equipo</a></li>
-                <li><a href="#quien_soy" title="Quién soy">Quien soy</a></li>
-                <li><a href="./contact.html" target="blank" title="Contacto">Contacto</a></li>
+            <ul class="header__nav--ul">
+                <li><a class="header__nav--a" href="#team" title='Equipo'>Equipo</a></li>
+                <li><a class="header__nav--a" href="#quien_soy" title="Quién soy">Quien soy</a></li>
+                <li><a class="header__nav--a" href="./contact.html" target="blank" title="Contacto">Contacto</a></li>
             </ul>
         </nav>
-
-        <p class="header__claim">Nunca ocultes tus gustos, tu esencia, tu humor raro, siempre habrá alguien tan retorcido como tú que piense
-            que eres genial</p>
     </header>
 
     <main>
 
-        <section id='team'>
-            <h2 class="team__title">Equipo</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque odit autem necessitatibus omnis
-            doloribus illum ea deserunt blanditiis eius porro est in saepe, incidunt aliquam. Ea illum dignissimos quasi obcaecati!
-            </p>
+        <p class="main__claim">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sed autem magni dolor possimus
-            debitis, beatae neque placeat ad, suscipit facere ea praesentium quaerat delectus aliquid qui ex id commodi!</p>
-        </section>
+        <article>
+            <section id='team'>
+                <h2 class="team__title">Equipo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque odit autem necessitatibus omnis
+                    doloribus illum ea deserunt blanditiis eius porro est in saepe, incidunt aliquam. Ea illum
+                    dignissimos quasi obcaecati!
+                </p>
 
-        <section>
-            <h3>Fortalezas</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ea, ullam tempore dicta accusantium cum illo vero ipsa doloribus recusandae at, minus rerum assumenda exercitationem! Praesentium eligendi incidunt asperiores quia!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sed autem magni dolor possimus
+                    debitis, beatae neque placeat ad, suscipit facere ea praesentium quaerat delectus aliquid qui ex id
+                    commodi!</p>
+            </section>
 
-            <h3>Debilidades</h3>
+            <section class="features">
+                <h3>Fortalezas</h3>
+                <p class="features__strength">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ea, ullam
+                    tempore
+                    dicta accusantium cum illo vero ipsa doloribus recusandae at, minus rerum assumenda exercitationem!
+                    Praesentium eligendi incidunt asperiores quia!</p>
 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit enim corporis deserunt exercitationem nemo aut suscipit magni iure eum quos quia consectetur, consequatur obcaecati labore veritatis voluptas distinctio explicabo.</p>
-        </section>
+                <h3>Debilidades</h3>
 
-        <section id="quien_soy">
-            <h2 class="quien_soy__title">Quien soy</h2>
-            <img src="./images/surf.jpg" alt="chica sentada sobre tabla de surf">
-            <h4>Nombre Apellido</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque repellat magni officiis dolore voluptas inventore possimus odit cumque fugiat molestias, suscipit dignissimos neque numquam quam error explicabo, eos rem minima.
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit enim corporis deserunt
+                    exercitationem nemo aut suscipit magni iure eum quos quia consectetur, consequatur obcaecati labore
+                    veritatis voluptas distinctio explicabo.</p>
+            </section>
 
-            </p>
-            <ul>
-                <li class="">GitHub</li>
-                <li class="fab fa-twitter">Twitter</li>
-                <li class="fab fa-youtube">Youtube</li>
-            </ul>
-            <!-- poner enlaces a rs e iconos -->
-        </section>
+            <section id="quien_soy" class="quien-soy">
+                <h2 class="quien-soy__title">Quién soy</h2>
+                <img class="quien-soy__img" src="./images/surf.jpg" alt="chica sentada sobre tabla de surf">
+                <h4 class="quien-soy__name">Nombre Apellido</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque repellat magni officiis dolore
+                    voluptas inventore possimus odit cumque fugiat molestias, suscipit dignissimos neque numquam quam
+                    error explicabo, eos rem minima.
+                </p>
+                <ul class="quien-soy__social">
+                    <li class="fab fa-twitter" title="Twitter"></li>
+                    <li class="fab fa-linkedin-in" title="Linkedin"></li>
+                    <li class="fab fa-github-alt" title="GitHub"></li>
+                    <li class="fas fa-envelope" title="Email"></li>
+                </ul>
+            </section>
 
-        <a href="#top" class='a_return' title="Volver al inicio">Volver al inicio</a>
-
+            <a href="#top" class='a_return' title="Volver al inicio">Volver al inicio</a>
+        </article>
     </main>
-<hr>
-    <footer>  <!--  arreglar footer  -->
-        <div class="copy">
-            <p>Powerkyria &copy 2020</p>
+    <hr>
+    <footer>
+        <div>
+            <p class="copy">Powerkyria &copy 2020</p>
         </div>
 
         <ul class="footer__ul">
-            <li><a href="#team" title='Equipo'>Equipo</a></li>
-            <li><a href="#quien_soy" title="Quién soy">Quien soy</a></li>
-            <li><a href="./contact.html" target="blank" title="Contacto">Contacto</a></li>
+            <li><a class="footer__ul--a" href="#team" title='Equipo'>Equipo</a></li>
+            <li><a class="footer__ul--a" href="#quien_soy" title="Quién soy">Quien soy</a></li>
+            <li><a class="footer__ul--a" href="./contact.html" target="blank" title="Contacto">Contacto</a></li>
         </ul>
 
-        <div class="logo">
-            <img src="" alt="">
-        </div>
+        <img class="logo" src="./images/logo11.png" alt="">
 
-        <!-- poner un logo -->
     </footer>
 
 </body>

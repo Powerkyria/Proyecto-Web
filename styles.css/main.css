@@ -1,19 +1,17 @@
 * {
 	padding: 0;
-
 }
 
 body {
 	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
-	/* font-family: 'Rubik', sans-serif;
- */		margin: 0;
+	font-weight: 400;
+	margin: 0;
 }
-
 
 h1 {
 	text-align: center;
-    background-color: rgba(98, 201, 248, 0.5);
+	background-color: rgba(98, 201, 248, 0.5);
 	color: #fff;
 	text-transform: uppercase;
 	line-height: 60px;
@@ -21,8 +19,7 @@ h1 {
 	margin: 0;
 }
 
-
-.nav__ul {
+.header__nav--ul {
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
@@ -32,19 +29,19 @@ h1 {
 	margin: 0;
 }
 
-/* .header__nav{
-	position: fixed;
-	width: 100vw;
+.header__nav {
+	position: sticky;
+	top: 0;
 	z-index: 1;
-} */
+}
 
-/* poner hover */
-
-.nav__ul a{
+.header__nav--a {
 	text-decoration: none;
 	justify-content: space-between;
 	color: #fff;
 }
+
+/* poner hover */
 
 .header__img {
 	background-image: url('../images/road.jpeg');
@@ -52,65 +49,130 @@ h1 {
 	background-size: cover;
 }
 
-.header__claim{
+.main__claim {
 	color: #000;
 	background-color: #fff;
-	font-family: open sans;
-	/*aquivafont-faceopensans-semibold*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 	font-size: 18px;
 	margin: 0 15px;
 	padding: 15px;
+}
+
+main {
 	position: relative;
-	top:282px;
+	top: -34px;
+	text-align: center;
 }
 
-
-
-main{
-margin: 130px 15px 0 15px;
-text-align: center;
+p {
+	margin-left: 16px;
+	margin-right: 16px;
+	color: #54585a;
 }
 
-h2{
+h2 {
 	text-transform: uppercase;
 	color: rgba(98, 201, 248);
-}
-.quien_soy__title{
-	margin: 30px 0;
-}
-#quien_soy img{
-	margin-bottom: 15px;
-	height:180px;
+	/* font-family: 'Rubik', sans-serif; */
+	font-style: 24px;
 }
 
-.a_return{
-    color: blue;
+.team__title {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.features {
+	background-color: #f1f1f1;
+	padding-top: 30px;
+	padding-bottom: 45px;
+	margin-top: 30px;
+}
+
+.features h3 {
+	color: #333;
+}
+
+.features__strength {
+	padding-bottom: 30px;
+}
+
+.quien-soy__title {
+	margin: 30px 0;
+}
+
+.quien-soy__img {
+	height: 180px;
+}
+
+.quien-soy__name {
+	color: #000;
+}
+
+.quien-soy__social {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	margin-bottom: 45px;
+	margin-top: 31px;
+}
+.quien-soy__social li {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 24px;
+	color: rgba(98, 201, 248);
+	cursor: pointer;
+}
+.quien-soy__social li:hover {
+	color: rgb(30, 85, 110);
+}
+
+.a_return {
+	color: blue;
 }
 
 /* FOOTER */
 
+footer {
+	text-align: center;
+}
+
+.copy {
+	margin-bottom: 20px;
+	padding-top: 14px;
+	color: #b8b8b9;
+	font-style: 14px;
+}
 .footer__ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 
-.footer__ul li a{
-	color:rgb(84, 88, 90);
+.footer__ul--a {
+	color: #6d7375;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.logo {
+	width: 115.9px;
+	margin-bottom: 45px;
 }
 
 /* FORMULARIO */
 
 h1 {
 	text-align: center;
-    background-color: rgba(98, 201, 248, 0.5);
+	background-color: rgba(98, 201, 248, 0.5);
 	color: #fff;
 	text-transform: uppercase;
 	line-height: 60px;
 	font-size: 20px;
 }
-
 
 .nav__ul {
 	list-style: none;
@@ -119,6 +181,7 @@ h1 {
 	background-color: rgba(252, 155, 77, 0.5);
 	text-transform: uppercase;
 	line-height: 45px;
+	margin: 0px;
 }
 
 a {
@@ -127,12 +190,9 @@ a {
 	color: #fff;
 }
 
-.header__img-contact {
+.header__img--contact {
 	background-image: url('../images/keyboard.jpeg');
 	height: 421px;
 	margin-bottom: 30px;
 	background-size: cover;
 }
-
-
-
