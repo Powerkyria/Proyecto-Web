@@ -30,12 +30,11 @@ h1 {
 .header__nav--ul {
 	list-style: none;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	background-color: rgba(252, 155, 77, 0.5);
 	text-transform: uppercase;
 	line-height: 45px;
 	margin: 0;
-	
 }
 
 .header__nav--li {
@@ -138,33 +137,34 @@ h2 {
 	padding-bottom: 30px;
 }
 
-.quien-soy__title {
+.quiénes-somos__title {
 	margin: 30px 0;
 }
 
-.quien-soy__img {
-	height: 180px;
+.quiénes-somos__img {
+	width: 180px;
+	height: 220px;
 }
 
-.quien-soy__name {
+.quiénes-somos__name {
 	color: #000;
 }
 
-.quien-soy__social {
+.quiénes-somos__social {
 	display: flex;
 	list-style: none;
 	justify-content: center;
 	margin-bottom: 45px;
 	margin-top: 31px;
 }
-.quien-soy__social li {
+.quiénes-somos__social li {
 	margin-left: 10px;
 	margin-right: 10px;
 	font-size: 24px;
 	color: rgba(98, 201, 248);
 }
 
-.quien-soy__social li:hover {
+.quiénes-somos__social li:hover {
 	color: rgb(30, 85, 110);
 	transform: scale(1.3);
 	-webkit-transform: scale(1.3);
