@@ -69,6 +69,7 @@ h1 {
 	justify-content: space-evenly;
 	color: #fff;
 	padding: 4px;
+	font-size: 13px;
 }
 
 .header__nav--a:hover {
@@ -158,8 +159,8 @@ h2 {
 	margin-top: 31px;
 }
 .quiénes-somos__social li {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 12px;
+	margin-right: 12px;
 	font-size: 24px;
 	color: rgba(98, 201, 248);
 }
