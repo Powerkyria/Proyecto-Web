@@ -16,7 +16,9 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	line-height: 60px;
-	font-size: 20px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
 	margin: 0;
 }
 
@@ -37,37 +39,26 @@ body {
 	margin: 0;
 }
 
-/* .header__nav--li {
-	transition: 1s;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
+.header__nav--li:hover {
+	transition: .1s;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+	-ms-transition: .1s;
+	-o-transition: .1s;
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
-} */
-
-.header__nav--li:hover {
-	transition: .2s;
-	-webkit-transition: .2s;
-	-moz-transition: .2s;
-	-ms-transition: .2s;
-	-o-transition: .2s;
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
 }
 
 .header__nav--a {
 	text-decoration: none;
-	color: #fff;
 	padding: 4px;
-	font-size: 13px;
+	color: #fff;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
 }
 
 .header__nav--a:hover {
@@ -111,14 +102,6 @@ body {
 	}
 }
 
-@media all and (min-width: 1200px) {
-	.header__title {
-		padding: 0 120px;
-	}
-	.header__nav--ul {
-		padding: 0 120px;
-	}
-}
 .main__home--claim {
 	color: #000;
 	background-color: #fff;
@@ -127,6 +110,18 @@ body {
 	font-size: 18px;
 	margin: 0 15px;
 	padding: 15px;
+}
+
+@media all and (min-width: 1200px) {
+	.header__title {
+		padding: 0 120px;
+	}
+	.header__nav--ul {
+		padding: 0 120px;
+	}
+	.main__home--claim {
+		font-size: 24px;
+	}
 }
 
 .main__home {
@@ -140,12 +135,14 @@ p {
 	margin-right: 16px;
 	color: #54585a;
 	line-height: 1.6;
+	font: 16px;
 }
 
 h2 {
 	text-transform: uppercase;
 	color: rgba(98, 201, 248);
-	/* font-family: 'Rubik', sans-serif; */
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
 	font-style: 24px;
 }
 
@@ -163,6 +160,9 @@ h2 {
 
 .features h3 {
 	color: #333;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-style: 22px;
 }
 
 .features__strength {
@@ -180,6 +180,7 @@ h2 {
 
 .quiénes-somos__name {
 	color: #000;
+	font-size: 20px;
 }
 
 .quiénes-somos__social {
@@ -254,9 +255,10 @@ footer {
 
 .footer__ul--a {
 	text-decoration: none;
-	color: #6d7375;
+	color: #54585a;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
+	font-size: 14px;
 }
 
 .logo {
@@ -294,21 +296,14 @@ footer {
 	right: 0px;
 	padding: 10px;
 }
-.a_return--contact div:hover {
-	color: #b8b8b9;
+
+.a_return--contact--div:hover {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
-	transition: .3s;
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
-	-o-transition: .3s;
 }
-
-/* arreglar flecha para tablet y desktop */
 
 /* MAIN */
 
@@ -324,8 +319,11 @@ footer {
 
 .term {
 	margin-bottom: 60px;
-	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
 }
+
 span {
 	color: rgba(98, 201, 248);
 }
@@ -334,7 +332,9 @@ form {
 	display: flex;
 	flex-direction: column;
 	margin: 0 15px;
-	box-sizing: border-box;
+	color: #54585a;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
 
 .form_field {
@@ -347,7 +347,7 @@ label {
 	margin-top: 15px;
 	display: flex;
 	justify-content: start;
-	color: #54585a;
+	font-size: 14px;
 }
 
 input {
@@ -365,6 +365,16 @@ textarea {
 	resize: none;
 }
 
+input::placeholder,
+textarea::placeholder {
+	color: #b8b8b9;
+	font-size: 16px;
+}
+
+.email::placeholder {
+	color: #54585a;
+}
+
 .send {
 	background: linear-gradient(rgb(98, 201, 248), rgb(69, 133, 163));
 	height: 45px;
@@ -376,9 +386,10 @@ textarea {
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
-	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
 	text-transform: uppercase;
-	letter-spacing: 1px;
 }
 
 .send:hover {
@@ -386,10 +397,15 @@ textarea {
 }
 
 @media all and (min-width: 768px) {
+	.header__nav--contact {
+		align-self: start;
+	}
+
 	form {
 		width: 442px;
 		margin: auto;
 	}
+
 	.send {
 		width: 206px;
 		align-self: flex-end;
@@ -405,13 +421,14 @@ textarea {
 	.a_return--contact {
 		top: 340px;
 	}
-	/* no funciona la flecha */
 
 	form {
 		width: 601px;
 	}
+
 	.send {
 		margin-bottom: 120px;
+		color: #fff;
 	}
 
 	.form_emailTel {
