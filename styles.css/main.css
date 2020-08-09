@@ -10,7 +10,7 @@ body {
 	margin: 0;
 }
 
-h1 {
+.header__title {
 	text-align: center;
 	background-color: rgba(98, 201, 248, 0.5);
 	color: #fff;
@@ -24,6 +24,7 @@ h1 {
 	position: sticky;
 	top: 0;
 	z-index: 1;
+	line-height: 45px;
 }
 /* Arreglar scroll de la barra de navegacion se queda en su elemento padre, el header*/
 
@@ -33,11 +34,10 @@ h1 {
 	justify-content: space-evenly;
 	background-color: rgba(252, 155, 77, 0.5);
 	text-transform: uppercase;
-	line-height: 45px;
 	margin: 0;
 }
 
-.header__nav--li {
+/* .header__nav--li {
 	transition: 1s;
 	-webkit-transition: 1s;
 	-moz-transition: 1s;
@@ -48,7 +48,7 @@ h1 {
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
-}
+} */
 
 .header__nav--li:hover {
 	transition: .2s;
@@ -64,7 +64,6 @@ h1 {
 }
 
 .header__nav--a {
-	/* display: block; */
 	text-decoration: none;
 	color: #fff;
 	padding: 4px;
@@ -73,8 +72,8 @@ h1 {
 
 .header__nav--a:hover {
 	background: linear-gradient(rgb(121, 118, 118), #333);
-	border-radius: 50%;
 	border: 1px solid #fff;
+	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
@@ -87,6 +86,39 @@ h1 {
 	background-size: cover;
 }
 
+@media all and (min-width: 768px) {
+	.header__title {
+		padding: 0 45px;
+	}
+	.header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header__nav {
+		line-height: 59.4px;
+		width: 100%;
+	}
+
+	.header__nav--ul {
+		justify-content: flex-end;
+		background-color: rgba(98, 201, 248, 0.5);
+		padding: 0 45px;
+	}
+
+	.header__nav--li {
+		margin-left: 25px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.header__title {
+		padding: 0 120px;
+	}
+	.header__nav--ul {
+		padding: 0 120px;
+	}
+}
 .main__home--claim {
 	color: #000;
 	background-color: #fff;
@@ -196,6 +228,10 @@ h2 {
 	-o-transition: .3s;
 }
 
+hr {
+	width: 100%;
+}
+
 /* FOOTER */
 
 footer {
@@ -228,82 +264,19 @@ footer {
 	margin-bottom: 45px;
 }
 
-/* FORMULARIO */
-
-
-/* HEADER */
-
-h1 {
-	text-align: center;
-	background-color: rgba(98, 201, 248, 0.5);
-	color: #fff;
-	text-transform: uppercase;
-	line-height: 60px;
-	font-size: 20px;
-	margin: 0;
+@media all and (min-width: 768px) {
+}
+@media all and (min-width: 1200px) {
 }
 
-/* .header__nav {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-} */
-/* Arreglar scroll de la barra de navegacion se queda en su elemento padre, el header*/
+/* ARREGLAR FOOTER */
 
-.header__nav--ul {
-	list-style: none;
-	display: flex;
-	/* justify-content: space-evenly; */
-	background-color: rgba(252, 155, 77, 0.5);
-	text-transform: uppercase;
-	line-height: 45px;
-	margin: 0;
-}
+/****** FORMULARIO ******/
 
-.header__nav--li {
-	transition: 1s;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
-	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
-}
-
-.header__nav--li:hover {
-	transition: .2s;
-	-webkit-transition: .2s;
-	-moz-transition: .2s;
-	-ms-transition: .2s;
-	-o-transition: .2s;
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
-}
-
-.header__nav--a {
-	/* display: block; */
+.header__title a {
 	text-decoration: none;
 	color: #fff;
-	padding: 4px;
-	font-size: 13px;
 }
-
-.header__nav--a:hover {
-	background: linear-gradient(rgb(121, 118, 118), #333);
-	border-radius: 50%;
-	border: 1px solid #fff;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-}
-
 .header__img--contact {
 	background-image: url('../images/keyboard.jpeg');
 	height: 300px;
@@ -311,33 +284,65 @@ h1 {
 	margin-bottom: 30px;
 }
 
+.header__nav--contact {
+	position: static;
+}
+
+.a_return--contact {
+	position: absolute;
+	top: 240px;
+	right: 0px;
+	padding: 10px;
+}
+.a_return--contact div:hover {
+	color: #b8b8b9;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+/* arreglar flecha para tablet y desktop */
+
 /* MAIN */
 
-.main__contact{
-text-align: center;
+.main__contact {
+	text-align: center;
 }
 
-.main__contact--title{
-padding: 15px;
-margin-top: 30px;
-margin-bottom: 15px;
+.main__contact--title {
+	padding: 15px;
+	margin-top: 0;
+	margin-bottom: 15px;
 }
 
-.term{
+.term {
 	margin-bottom: 60px;
 	font-size: 14px;
 }
-span{
+span {
 	color: rgba(98, 201, 248);
 }
 
-form{
+form {
 	display: flex;
 	flex-direction: column;
 	margin: 0 15px;
+	box-sizing: border-box;
 }
 
-label{
+.form_field {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
 	margin-bottom: 5px;
 	margin-top: 15px;
 	display: flex;
@@ -345,21 +350,23 @@ label{
 	color: #54585a;
 }
 
-input{
+input {
 	height: 45px;
 	border: 1px solid #b8b8b9;
 	padding: 0 10px;
+	margin-bottom: 15px;
+	width: 100%;
 }
 
-textarea{
+textarea {
 	height: 105px;
 	padding: 10px;
 	margin-bottom: 30px;
 	resize: none;
 }
 
-.send{
-	background: linear-gradient(rgb(98, 201, 248),rgb(69, 133, 163));
+.send {
+	background: linear-gradient(rgb(98, 201, 248), rgb(69, 133, 163));
 	height: 45px;
 	margin-bottom: 60px;
 	border: none;
@@ -369,12 +376,54 @@ textarea{
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
-.send:hover{
-	background: rgb(94, 169, 204);
+.send:hover {
+	background: rgb(65, 132, 163);
 }
 
-.hr__contact{
-	margin-top: 60px;
+@media all and (min-width: 768px) {
+	form {
+		width: 442px;
+		margin: auto;
+	}
+	.send {
+		width: 206px;
+		align-self: flex-end;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.header__img--contact {
+		height: 400px;
+		margin-bottom: 45px;
+	}
+
+	.a_return--contact {
+		top: 340px;
+	}
+	/* no funciona la flecha */
+
+	form {
+		width: 601px;
+	}
+	.send {
+		margin-bottom: 120px;
+	}
+
+	.form_emailTel {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.email {
+		width: 395px;
+		margin-right: 44px;
+	}
+	.phone {
+		width: 162px;
+	}
 }
