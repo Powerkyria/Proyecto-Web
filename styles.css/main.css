@@ -8,6 +8,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	margin: 0;
+	
 }
 
 .header__title {
@@ -77,31 +78,6 @@ body {
 	background-size: cover;
 }
 
-@media all and (min-width: 768px) {
-	.header__title {
-		padding: 0 45px;
-	}
-	.header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.header__nav {
-		line-height: 59.4px;
-		width: 100%;
-	}
-
-	.header__nav--ul {
-		justify-content: flex-end;
-		background-color: rgba(98, 201, 248, 0.5);
-		padding: 0 45px;
-	}
-
-	.header__nav--li {
-		margin-left: 25px;
-	}
-}
-
 .main__home--claim {
 	color: #000;
 	background-color: #fff;
@@ -110,18 +86,6 @@ body {
 	font-size: 18px;
 	margin: 0 15px;
 	padding: 15px;
-}
-
-@media all and (min-width: 1200px) {
-	.header__title {
-		padding: 0 120px;
-	}
-	.header__nav--ul {
-		padding: 0 120px;
-	}
-	.main__home--claim {
-		font-size: 24px;
-	}
 }
 
 .main__home {
@@ -151,18 +115,21 @@ h2 {
 	margin-bottom: 15px;
 }
 
+.team p:last-of-type{
+	margin-bottom: 30px;
+}
+
 .features {
 	background-color: #f1f1f1;
 	padding-top: 30px;
 	padding-bottom: 45px;
-	margin-top: 30px;
 }
 
 .features h3 {
 	color: #333;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 500;
-	font-style: 22px;
+	font-size: 22px;
 }
 
 .features__strength {
@@ -233,6 +200,85 @@ hr {
 	width: 100%;
 }
 
+
+@media all and (min-width: 768px) {
+	.header__title {
+		padding: 0 45px;
+	}
+	.header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header__nav {
+		line-height: 59.4px;
+		width: 100%;
+	}
+
+	.header__nav--ul {
+		justify-content: flex-end;
+		background-color: rgba(98, 201, 248, 0.5);
+		padding: 0 45px;
+	}
+
+	.header__nav--li {
+		margin-left: 25px;
+	}
+
+	.main__home--claim {
+		width: 441px;
+		padding: 15px 30px;
+		margin-left: 45px;
+	}
+
+	.main__home {
+		position: relative;
+		top: -88px;
+	}
+
+	p {
+		margin-left: 45px;
+		margin-right: 45px;
+	}
+	.team__title{
+		margin-top: 45px;
+	}
+
+	.team p:last-of-type{
+		margin-bottom: 60px;
+	}
+
+	.features{
+		padding-top: 45px;
+		padding-bottom: 60px;
+		display: flex;
+	}
+	
+	.features__strength{
+		padding-bottom: 0;
+		margin: 15px 15px 0 45px;
+	}
+	.features__weaknesses{
+		margin: 15px 45px 0 15px;
+	}
+
+
+}
+
+@media all and (min-width: 1200px) {
+	.header__title {
+		padding: 0 120px;
+	}
+	.header__nav--ul {
+		padding: 0 120px;
+	}
+	.header__img {
+		height: 550px;
+	}
+	.main__home--claim {
+		font-size: 24px;
+	}
+}
 /* FOOTER */
 
 footer {
