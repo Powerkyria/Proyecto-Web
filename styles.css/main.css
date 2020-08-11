@@ -295,7 +295,7 @@ h2 {
 
 	.main__home--claim {
 		font-size: 24px;
-		margin-left: 168px;
+		margin-left: 153px;
 	}
 
 	.team {
@@ -318,6 +318,7 @@ h2 {
 		margin-left: 22.5px;
 	}
 }
+
 /* FOOTER */
 
 footer {
@@ -387,9 +388,19 @@ footer {
 }
 
 @media all and (min-width: 1200px) {
-}
 
-/* ARREGLAR FOOTER */
+	.copy{
+		margin-left: 138px;
+	}
+
+	.logo{
+		margin-left: 138px;
+	}
+
+	.footer__ul{
+		margin-right: 138px;
+	}
+}
 
 /****** FORMULARIO ******/
 
