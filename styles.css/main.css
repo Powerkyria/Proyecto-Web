@@ -122,6 +122,20 @@ h2 {
 	margin-bottom: 30px;
 }
 
+.square{
+
+	background-color: #fff;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 15px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
 .features {
 	background-color: #f1f1f1;
 	padding-top: 30px;
