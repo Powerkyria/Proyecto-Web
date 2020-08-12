@@ -16,7 +16,7 @@ una página de contacto con un formulario para que puedan ponerse en contacto co
 
 opcionalmente, una página por cada componente del equipo con información más detallada sobre cada una
 
-Todas las páginas tendrán una cabecera (header) y un pie de página (footer). En la cabecera aparece el nombre del equipo y un menú de navegación que debe mantenerse fijo en la parte superior de la ventana al hacer scroll. En el pie de página aparece el copyright, otro menú y el logo de Adalab.
+Todas las páginas tendrán una cabecera (header) y un pie de página (footer). En la cabecera aparece el nombre del equipo y un menú de navegación que debe mantenerse fijo en la parte superior de la ventana al hacer scroll. En el pie de página aparece el copyright, otro menú y un logo.
 
 En la página principal, aparece:
 
