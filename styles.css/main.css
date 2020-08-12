@@ -14,10 +14,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	line-height: 45px;
-	position: fixed;
+	/* position: fixed;
 	width: 100%;
-	z-index: 1;
+	z-index: 1; */
 }
+
+/* No me gusta la barra de navegacion fija */
 
 .header__title {
 	text-align: center;
@@ -73,6 +75,8 @@ body {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 } */
+
+/* Otro efecto hover para la barra de navegacion */
 
 .header__nav--a::before,
 .header__nav--a::after {
@@ -208,13 +212,22 @@ h2 {
 	margin: 30px 0;
 }
 
-.polaroid {
+/* .polaroid {
     background-color:white;
-    padding:10px 10px 50px 10px;
+    padding:10px 10px 0px 10px;
     border:1px solid #BFBFBF;
 	box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8)
-}
+} */
 	
+.polaroidContenedor {
+	margin: auto;
+	width: 200px; 
+	padding:10px 10px 0px 10px;
+	border:1px solid #BFBFBF;
+	background-color:white;
+	box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
 .who-are-we__img {
 	width: 180px;
 	height: 220px;
@@ -223,6 +236,10 @@ h2 {
 .who-are-we__name {
 	color: #000;
 	font-size: 20px;
+	margin-top: 8px;
+	margin-bottom: 12px;
+	font-style:italic;
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .who-are-we__social {
