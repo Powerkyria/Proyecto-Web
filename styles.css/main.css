@@ -40,8 +40,8 @@ body {
 	margin: 0;
 }
 
-/* .header__nav--li:hover {
-		transition: .1s;
+.header__nav--li:hover {
+	transition: .1s;
 	-webkit-transition: .1s;
 	-moz-transition: .1s;
 	-ms-transition: .1s;
@@ -51,7 +51,7 @@ body {
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
-} */
+}
 
 .header__nav--a {
 	text-decoration: none;
@@ -93,11 +93,11 @@ body {
 	border-right: 4px solid #00ffff;
 	top: 0;
 	border-top: 2px solid #00ffff;
-	transform: translate(0%, 100%);
-	-webkit-transform: translate(0%, 100%);
-	-moz-transform: translate(0%, 100%);
-	-ms-transform: translate(0%, 100%);
-	-o-transform: translate(0%, 100%);
+	transform: translate(0%, 70%);
+	-webkit-transform: translate(0%, 70%);
+	-moz-transform: translate(0%, 70%);
+	-ms-transform: translate(0%, 70%);
+	-o-transform: translate(0%, 70%);
 }
 
 .header__nav--a::after {
@@ -208,6 +208,13 @@ h2 {
 	margin: 30px 0;
 }
 
+.polaroid {
+    background-color:white;
+    padding:10px 10px 50px 10px;
+    border:1px solid #BFBFBF;
+	box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8)
+}
+	
 .who-are-we__img {
 	width: 180px;
 	height: 220px;
@@ -289,7 +296,7 @@ h2 {
 	}
 
 	.header__nav--li {
-		margin-left: 25px;
+		margin-left: 30px;
 	}
 
 	.main__home--claim {
@@ -453,7 +460,7 @@ footer {
 
 /****** FORMULARIO ******/
 
-.header__nav {
+.header__nav--contact {
 	position: static;
 }
 
