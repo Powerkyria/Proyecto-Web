@@ -65,18 +65,6 @@ body {
 	position: relative;
 }
 
-/* EFFECT MOBIL AND TABLET */
-
-/* .header__nav--a:hover {
-	background: linear-gradient(rgb(121, 118, 118), #333);
-	border: 1px solid #fff;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-} */
-
 .header__img {
 	background-image: url('../images/road.jpeg');
 	height: 421px;
@@ -167,7 +155,7 @@ h2 {
 
 .polaroidContenedor {
 	margin: auto;
-	width: 203px;
+	width: 202px;
 	padding: 10px 10px 0px 10px;
 	border: 1px solid #bfbfbf;
 	background-color: white;
@@ -330,24 +318,63 @@ h2 {
 		margin: 15px 45px 0 15px;
 	}
 
+	/* FLEXBOX */
+
 	.who-are-we {
 		margin-left: 45px;
 		margin-right: 45px;
 	}
 
+	.who-are-we__img {
+		width: 205px;
+		height: 245px;
+	}
+
+	.polaroidContenedor {
+		width: 227px;
+	}
+
 	.flex {
 		display: flex;
-		width: 100%;
+		align-items: center;
+		padding-bottom: 60px;
 	}
 
 	.flex p {
 		text-align: left;
-		/* width: 100%; */
+		margin-right: 0;
 	}
 
 	.who-are-we__social {
-		align-self: flex-end;
-		width: 100%;
+		justify-content: start;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	/* .flex:nth-child(odd){
+		flex-direction: row-reverse;
+	}
+	.flex:nth-child(odd) p{
+		text-align: right;
+		margin-left: 0;
+		margin-right: 45px;
+	}
+	.flex:nth-child(odd) ul{
+		justify-content: flex-end;
+	} */
+
+	.who-are-we div:nth-of-type(even) {
+		flex-direction: row-reverse;
+	}
+
+	.who-are-we div:nth-of-type(even) div p {
+		text-align: right;
+		margin-left: 0;
+		margin-right: 45px;
+	}
+
+	.who-are-we div:nth-of-type(even) div ul {
+		justify-content: flex-end;
 	}
 }
 
