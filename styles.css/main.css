@@ -182,8 +182,12 @@ h2 {
 	display: flex;
 	list-style: none;
 	justify-content: center;
+	margin-bottom: 60px;
+	margin-top: 30px;
+}
+
+.who-are-we__social:last-child {
 	margin-bottom: 45px;
-	margin-top: 31px;
 }
 
 .who-are-we__social li:nth-child(odd) {
