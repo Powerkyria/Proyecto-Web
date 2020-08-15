@@ -97,7 +97,7 @@ p {
 
 h2 {
 	text-transform: uppercase;
-	color: rgba(98, 201, 248);
+	color: rgba(3, 158, 225);
 	font-family: 'Rubik', sans-serif;
 	font-weight: 500;
 	font-style: 24px;
@@ -194,7 +194,7 @@ h2 {
 	margin-left: 12px;
 	margin-right: 12px;
 	font-size: 24px;
-	color: rgba(98, 201, 248);
+	color: rgba(3, 158, 225);
 }
 
 .who-are-we__social li:nth-child(odd):hover {
