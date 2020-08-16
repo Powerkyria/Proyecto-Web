@@ -498,6 +498,16 @@ h2 {
 	.features__weaknesses {
 		margin-left: 22.5px;
 	}
+
+	.who-are-we__img {
+		width: 278px;
+		height: 318px;
+	}
+
+	.polaroidContenedor {
+		width: 300px;
+	}
+
 }
 
 /* FOOTER */
