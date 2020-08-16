@@ -230,6 +230,12 @@ h2 {
 	-o-transition: .3s;
 }
 
+hr{
+	border:0;
+	height: 1px;
+	background-color:#7a7c7e;
+}
+
 @media all and (min-width: 768px) {
 	.header__nav--wrapper {
 		display: flex;
@@ -417,7 +423,7 @@ h2 {
 		background-color: transparent;
 	}
 
-	/* EFECTO NAV */
+	/*  NAV EFFECT */
 
 	.header__nav--a::before,
 	.header__nav--a::after {
