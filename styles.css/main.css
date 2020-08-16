@@ -720,7 +720,7 @@ textarea::placeholder {
 }
 
 .send {
-	background: linear-gradient(rgb(98, 201, 248), rgb(69, 133, 163));
+	background: linear-gradient(rgb(98, 201, 248),  rgba(3, 158, 225));
 	height: 45px;
 	margin-bottom: 60px;
 	border: none;
