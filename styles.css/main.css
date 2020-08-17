@@ -66,7 +66,7 @@ body {
 }
 
 .header__img {
-	background-image: url('../images/infiniteHighway768.jpeg');
+	background-image: url('../images/infiniteHighwayMobile.jpeg');
 	height: 421px;
 	background-size: cover;
 }
