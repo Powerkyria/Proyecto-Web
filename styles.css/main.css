@@ -627,7 +627,7 @@ footer {
 }
 
 .header__img--contact {
-	background-image: url('../images/keyboard528x300.jpeg');
+	background-image: url('../images/keyboard.jpeg');
 	height: 300px;
 	background-size: cover;
 	margin-bottom: 30px;
@@ -738,10 +738,6 @@ textarea::placeholder {
 @media all and (min-width: 768px) {
 	.header__nav--contact {
 		align-self: start;
-	}
-
-	.header__img--contact {
-		background-image: url('../images/keyboard704x400.jpeg');
 	}
 
 	form {
