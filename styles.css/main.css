@@ -66,7 +66,7 @@ body {
 }
 
 .header__img {
-	background-image: url('../images/infiniteHighway581x387.jpeg');
+	background-image: url('../images/roadMobile.jpeg');
 	height: 421px;
 	background-size: cover;
 }
@@ -230,10 +230,10 @@ h2 {
 	-o-transition: .3s;
 }
 
-hr{
-	border:0;
+hr {
+	border: 0;
 	height: 1px;
-	background-color:#7a7c7e;
+	background-color: #7a7c7e;
 }
 
 @media all and (min-width: 768px) {
@@ -393,7 +393,6 @@ hr{
 	.arrow_return {
 		font-size: 38px;
 	}
-
 }
 
 @media all and (min-width: 1200px) {
@@ -720,7 +719,7 @@ textarea::placeholder {
 }
 
 .send {
-	background: linear-gradient(rgb(98, 201, 248),  rgba(3, 158, 225));
+	background: linear-gradient(rgb(98, 201, 248), rgba(3, 158, 225));
 	height: 45px;
 	margin-bottom: 60px;
 	border: none;
@@ -743,6 +742,10 @@ textarea::placeholder {
 @media all and (min-width: 768px) {
 	.header__nav--contact {
 		align-self: start;
+	}
+
+	.header__img--contact {
+		background-image: url('../images/keyboard704x400.jpeg');
 	}
 
 	form {
