@@ -69,9 +69,10 @@ body {
 	background-image: url('../images/road.jpeg');
 	height: 421px;
 	background-size: cover;
+	position: relative;
 }
 
-.main__home--claim {
+.header__home--claim {
 	color: #000;
 	background-color: #fff;
 	font-family: 'Open Sans', sans-serif;
@@ -79,12 +80,19 @@ body {
 	font-size: 18px;
 	margin: 0 15px;
 	padding: 15px;
+	text-align: center;
+	position: absolute;
+	bottom: -34px;
+	right: 0;
+	left: 0;
 }
 
 .main__home {
-	position: relative;
-	top: -34px;
 	text-align: center;
+	border-bottom: 1px solid #7a7c7e;
+	padding-bottom: 45px;
+	position: relative;
+	top: 34px;
 }
 
 p {
@@ -92,7 +100,7 @@ p {
 	margin-right: 16px;
 	color: #54585a;
 	line-height: 1.6;
-	font: 16px;
+	font-size: 16px;
 }
 
 h2 {
@@ -230,12 +238,6 @@ h2 {
 	-o-transition: .3s;
 }
 
-hr {
-	border: 0;
-	height: 1px;
-	background-color: #7a7c7e;
-}
-
 @media all and (min-width: 768px) {
 	.header__nav--wrapper {
 		display: flex;
@@ -262,10 +264,11 @@ hr {
 		margin-left: 30px;
 	}
 
-	.main__home--claim {
+	.header__home--claim {
 		width: 441px;
 		padding: 15px 30px;
 		margin-left: 45px;
+		bottom: 0;
 	}
 
 	/* ANIMATION */
@@ -293,10 +296,9 @@ hr {
 			-o-transform: translateX(0%);
 		}
 	}
-
 	.main__home {
-		position: relative;
-		top: -88px;
+		top: 0;
+		padding-bottom: 60px;
 	}
 
 	p {
@@ -481,14 +483,16 @@ hr {
 		-o-transform: rotate(-10deg);
 	}
 
-	.main__claim--wrapper {
+	.header__claim--wrapper {
 		width: 924px;
 		margin: auto;
 	}
 
-	.main__home--claim {
+	.header__home--claim {
 		font-size: 24px;
 		margin-left: 0;
+		right: auto;
+		left: auto;
 	}
 
 	.team p {
@@ -539,6 +543,8 @@ hr {
 
 footer {
 	text-align: center;
+	position: relative;
+	top: 34px;
 }
 
 .copy {
@@ -574,6 +580,7 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
+		top: 0;
 	}
 	.copy {
 		grid-column: 1 / 2;
