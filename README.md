@@ -1,95 +1,124 @@
-Especificaciones
+![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
-Se desarrollará una página web con las siguientes características:
+# Adalab web starter kit
 
-Uso de HTML y Sass (al principio usaréis CSS pero la versión final debe usar Sass)
+Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
 
-Uso de mediaqueries y otras técnicas de diseño responsive para que la web se adapte al tamaño de pantalla de distintos dispositivos
-Uso de git para el control de versiones del proyecto
-Publicación del resultado en Internet usando GitHub Pages
+Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
 
-La web tendrá varias páginas:
+En el Kit hay 3 tipos de ficheros y carpetas:
 
-una página principal (Home) con la información principal sobre el equipo
+- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
+- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
+- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
 
-una página de contacto con un formulario para que puedan ponerse en contacto con vosotras
+## Guía de inicio rápido
 
-opcionalmente, una página por cada componente del equipo con información más detallada sobre cada una
+> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
 
-Todas las páginas tendrán una cabecera (header) y un pie de página (footer). En la cabecera aparece el nombre del equipo y un menú de navegación que debe mantenerse fijo en la parte superior de la ventana al hacer scroll. En el pie de página aparece el copyright, otro menú y un logo.
+### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
 
-En la página principal, aparece:
+1. **Crea tu propio repositorio.**
+1. Descarga este **Starter kit desde GitHub**.
+   - No recomendamos que clones este repo ya que no podrás añadir commits.
+1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
+   - Recuerda que debes copiar **también los ficheros ocultos**.
+   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
+1. **Abre una terminal** en la carpeta raíz de tu repositorio.
+1. **Instala las dependencias** locales ejecutando en la terminal el comando:
 
-una foto del equipo
-la frase (claim) del equipo
-una sección "equipo" con la descripción del mismo (por qué os identificáis como equipo, cosas que tenéis en común) y vuestras fortalezas y debilidades
-una sección de "quiénes somos" con información resumida de cada miembro del equipo: nombre, foto, breve bio y enlaces sociales (Twitter, LinkedIn, GitHub y correo)
+```bash
+npm install
+```
 
-FORMULARIO
+### Pasos para arrancar el proyecto:
 
-En la página de contacto habrá un formulario que recoge información de contacto como nombre completo, email, teléfono y mensaje, y un botón para poder enviarlo.
+Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
 
-Las páginas principal y de contacto tienen un diseño establecido, al que debéis ajustaros lo máximo posible. El diseño está realizado para 3 tamaños de dispositivo:
+```bash
+npm start
+```
 
-móvil, por debajo de 768px
-tablet, desde 768px hasta 1200px
-desktop, a partir de 1200px
+Este comando:
 
-LOGO, ICONOS TIPOGRAFIA Y PALETA
+- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
+- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
+- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
+   - Convierte los ficheros SASS en CSS.
+   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
 
-Los iconos sociales los podéis sacar de Font Awesome
+Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
 
-Las tipografías:
-Open Sans y Rubik, disponibles en Google Fonts.
+### Pasos para publicar el proyecto en GitHub Pages:
 
-Colores
-Verde oscuro: #099d8d
-Verde claro: #14d9c4
-Blanco: #ffffff
-Negro: #000000
-Gris oscuro: #54585a
-Gris claro: #b8b8b9
-Gris de fondo: #f1f1f1
+Para generar tu página para producción ejecuta el comando:
 
+```bash
+npm run docs
+```
 
-HISTORIAS DE USUARIO
+Y a continuación:
 
-Para la gestión del proyecto, usaremos historias de usuario, que es una herramienta para definir las características de un producto que veremos en detalle durante el curso.
+1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
+1. Entra en la pestaña `settings` de tu repo.
+1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
+1. Y ya estaría!!!
 
-Primera. Versión móvil de la web
+Además, los comandos:
 
-Desarrollar la versión para móvil de la web (página principal) con HTML y CSS
+```bash
+npm run push-docs
+```
+o
 
-Crear el contenido de la web: textos e imágenes
+```bash
+npm run deploy
+```
 
-Segunda. Versión responsive de la web
+son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
 
-Hacer la web para el resto de tamaños de pantalla (tablet, desktop)
+## Flujo de archivos con Gulp
 
-Tercera. Mejora de tecnología
+Estas tareas de Gulp producen el siguiente flujo de archivos:
 
-Integración con gulp para automatización de tareas
-Dividir HTML en partials
-Pasar el CSS a Sass (también usando partials)
-Aplicar las técnicas avanzadas aprendidas en la parte final del curso:
-Grid en la sección de "quiénes somos"
-Opcionalmente añadir animaciones y transiciones
+![Gulp flow](./gulp-flow.png)
 
-Cuarta. Formulario de contacto
+## `gulpfile.js` y `config.json`
 
-Realizar el formulario de contacto para todos los dispositivos
-Hacer que funcione el envío usando el servicio formspree.io
+Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
 
-ALGUNOS CONSEJOS IMPORTANTES:
+De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
 
-Diseñaremos siempre con el pixel como medida para márgenes, relleno, tamaño de fuentes y bordes y con el porcentaje para anchos y algunas alturas
+## Estructura de carpetas
 
-Lo normal es diseñar en una pantalla de 320x480
+La estructura de carpetas tiene esta pinta:
 
-Es recomendable usar múltiplos de 12, 8 o 10 para las medidas, de esta forma creamos cierto ritmo y consistencia en el diseño
+```
+src
+ ├─ api // los ficheros de esta carpeta se copian en public/api/
+ |  └─ data.json
+ ├─ images
+ |  └─ logo.jpg
+ ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
+ |  ├─ main.js
+ |  └─ events.js
+ ├─ scss
+ |  ├─ components
+ |  ├─ core
+ |  ├─ layout
+ |  └─ pages
+ └─ html
+    └─ partials
+```
 
-Lo normal para los márgenes en móvil es usar entre 16 y 24 píxeles
+> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
 
-Usar un interlineado de entre 1.4 y 1.6 para el texto ayuda a dar espacio y lo deja mucho menos sobrecargado.
+## Vídeotutoriales del Starter kit
 
-Es fundamental usar un grid para las vistas en ordenador
+- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
+- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
+- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
+
+## Falta algo?
+
+Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
