@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+    function sendEmail() {
+
+        const email = document.getElementById('email').value;
+        const name = document.getElementById('name').value;
+        const message = document.getElementById('message').value;
+
+        Email.send({
+
+            SecureToken: "6e23100a-d3d6-4309-8e34-35cb24985d22",
+            To: "correosdeformularios@gmail.com",
+            From: email,
+            Subject: name,
+            Body: message
+
+        }).then(
+            message => alert('Email enviado correctamente')
+        );
+    }
+
+    const button = document.querySelector('.send');
+    button.addEventListener('click', sendEmail);
+
+</script>
