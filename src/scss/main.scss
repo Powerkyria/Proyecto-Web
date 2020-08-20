@@ -394,6 +394,10 @@ h2 {
 }
 
 @media all and (min-width: 1200px) {
+	.header__img {
+		background-image: url('../images/roadDesktop.jpeg');
+	}
+
 	.header__nav--wrapper {
 		width: 924px;
 		margin: auto;
