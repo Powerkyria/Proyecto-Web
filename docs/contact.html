@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon" href="./assets/images/logo4.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <header class='header__img--contact  header header__contact'>
+
+        <nav class="header__nav header__nav--contact">
+            <div class="header__nav--wrapper">
+                <div>
+                    <h1 class="header__title"><a href="./index.html" title="Página principal">Powerkyria</a> </h1>
+                </div>
+                <ul class="header__nav--ul">
+                    <li class="header__nav--li"><a class="header__nav--a" href="index.html#team">Equipo</a>
+                    </li>
+                    <li class="header__nav--li"><a class="header__nav--a" href="index.html#who_are_we">Quiénes somos</a>
+                    </li>
+                    <li class="header__nav--li"><a class="header__nav--a" href="./contact.html" target="blank">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <a href="./index.html" class="arrow_return arrow_return--contact" title="Atrás">
+            <div class="fas fa-arrow-circle-left  arrow_return--div arrow--contact--div"></div>
+        </a>
+
+    </header>
+    <main class="main__contact">
+
+        <form method="POST">
+
+            <h2 class="main__contact--title">Contacto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore cumque dolorem odio porro
+                laudantium
+                iste aperiam?</p>
+
+            <p class="term">Todos los campos marcados con <span>*</span> son obligatorios.</p>
+
+            <div class="form_field">
+                <label for="name">Nombre completo <span> *</span> </label>
+                <input type="text" id="name" class="input-name" placeholder=" Nombre..." required>
+            </div>
+
+            <div class="form_field form_emailTel">
+
+                <div>
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" class="email" placeholder=" nombre.apellidos@mail.com" required>
+                </div>
+
+                <div>
+                    <label for="Tel">Teléfono</label>
+                    <input type="tel" id="Tel" class="phone" placeholder=" Ej: 123456789" maxlength="9">
+                </div>
+
+            </div>
+
+            <div class="form_field">
+                <label for="message">Mensaje<span>*</span></label>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="¿Qué necesitas?" required></textarea>
+            </div>
+
+            <input class="send" type="submit" value="Enviar">
+
+        </form>
+
+    </main>
+    <footer class="footer__contact">
+        <div>
+            <p class="copy">Powerkyria &copy 2020</p>
+        </div>
+
+        <ul class="footer__ul footer__contact--ul">
+            <li><a class="footer__ul--a" href="index.html#team">Equipo</a></li>
+            <li><a class="footer__ul--a" href="index.html#who_are_we">Quiénes somos</a></li>
+            <li><a class="footer__ul--a" href="./contact.html" target="blank">Contacto</a></li>
+        </ul>
+
+        <img class="footer__logo" src="./assets/images/logo11.png" alt="">
+
+    </footer>
+    <script type="text/javascript">
+
+        function sendEmail() {
+
+            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+
+            Email.send({
+
+                SecureToken: "6e23100a-d3d6-4309-8e34-35cb24985d22",
+                To: "correosdeformularios@gmail.com",
+                From: email,
+                Subject: name,
+                Body: message
+
+            }).then(
+                message => alert('Email enviado correctamente')
+            );
+        }
+
+        const button = document.querySelector('.send');
+        button.addEventListener('click', sendEmail);
+
+    </script>
+
+</body>
+
+</html>
