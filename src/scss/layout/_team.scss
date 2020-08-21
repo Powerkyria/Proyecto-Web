@@ -22,6 +22,7 @@
 		margin-bottom: 15px;
 	}
 }
+
 .square {
 	background-color: $color_white;
 	width: 30px;
@@ -35,29 +36,30 @@
 	-o-transform: rotate(45deg);
 }
 
-@include tablet {
+.features {
+	background-color: $color-gray-background;
+	padding-top: 30px;
+	padding-bottom: 45px;
+
 	.features__wrapper {
-		padding-top: 45px;
-		padding-bottom: 60px;
-		display: flex;
+		@include tablet {
+			padding-top: 45px;
+			padding-bottom: 60px;
+			display: flex;
+		}
 
 		@include desktop {
 			width: 924px;
 			margin: auto;
 		}
-	}
 
-	.features {
-		background-color: $color-gray-background;
-		padding-top: 30px;
-		padding-bottom: 45px;
-
-		.features h3 {
+		h3 {
 			color: #333;
 			font-family: $font-secundary;
 			font-weight: $font-weight-medium;
 			font-size: $font-size-title-features;
 		}
+
 		.features__strength {
 			padding-bottom: 30px;
 			margin-bottom: 0;
