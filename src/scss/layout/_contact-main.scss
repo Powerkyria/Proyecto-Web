@@ -1,0 +1,134 @@
+.main__contact {
+	text-align: center;
+	border-bottom: 1px solid #7a7c7e;
+
+	form {
+		display: flex;
+		flex-direction: column;
+		margin: 0 15px;
+		color: $color-dark;
+		font-family: $font-main;
+		font-weight: $font-main-weight-regular;
+
+		@include tablet {
+			width: 442px;
+			margin: auto;
+		}
+
+		@include desktop {
+			width: 601px;
+		}
+
+		.main__contact--title {
+			padding: 15px;
+			margin-top: 0;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+			color: $color-primary;
+			font-family: $font-secundary;
+			font-weight: $font-weight-medium;
+			font-size: $font-size-title-section;
+		}
+
+		.term {
+			margin-bottom: 60px;
+			font-family: $font-main;
+			font-weight: $font-main-weight-regular;
+			font-size: $font-term;
+		}
+
+		span {
+			color: rgb(98, 201, 248);
+		}
+
+		.form_field {
+			display: flex;
+			flex-direction: column;
+
+			label {
+				margin-bottom: 5px;
+				margin-top: 15px;
+				display: flex;
+				justify-content: start;
+				font-size: $font-labels;
+			}
+
+			.email::placeholder {
+				color: $color-dark;
+			}
+
+			input {
+				height: $height-input;
+				border: 1px solid $color-light;
+				padding: 0 10px;
+				margin-bottom: 15px;
+				width: 100%;
+
+				&::placeholder {
+					color: $color-light;
+					font-size: $font-placeholder;
+					font-family: $font-main;
+					font-weight: $font-main-weight-regular;
+				}
+			}
+
+			textarea {
+				height: 105px;
+				padding: 10px;
+				margin-bottom: 30px;
+				resize: none;
+				border-color: $color-light;
+
+				&::placeholder {
+					color: $color-light;
+					font-size: $font-placeholder;
+					font-family: $font-main;
+					font-weight: $font-main-weight-regular;
+				}
+			}
+		}
+		@include desktop {
+			.form_emailTel {
+				display: flex;
+				flex-direction: row;
+				.email {
+					width: 395px;
+					margin-right: 44px;
+				}
+				.phone {
+					width: 162px;
+				}
+			}
+		}
+
+		.send {
+			background: linear-gradient(rgb(98, 201, 248), $color-primary);
+			height: $height-button;
+			margin-bottom: 60px;
+			border: none;
+			color: $color-white;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			font-family: $font-main;
+			font-weight: $font-main-weight-semibold;
+			font-size: $font-button;
+			text-transform: uppercase;
+
+			&:hover {
+				background: $color-button-hover;
+			}
+
+			@include tablet {
+				width: 206px;
+				align-self: flex-end;
+			}
+			@include desktop {
+				margin-bottom: 120px;
+				color: $color-white;
+			}
+		}
+	}
+}
