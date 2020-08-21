@@ -1,34 +1,44 @@
-
 // fonts
 $font-main: 'Open Sans', sans-serif;
 $font-main-weight-regular: 400;
 $font-main-weight-semibold: 600;
 $font-secundary: 'Rubik', sans-serif;
+$font-weigt-medium: 500;
+
+//font-sizes
+$font-size-title: 16px;
 $font-size-small: 14px;
 $font-size-text: 16px;
+$font-size-nav: 15px;
 $font-size-claim-mobile: 18px;
+$font-size-claim-desktop: 24px;
 $font-size-title-section: 24px;
 $font-size-title-features: 22px;
 $font-size-name: 20px;
 
-//form-font
+//font-form
 
-$font-term:12px;
-$font-placeholder:16px;
-$font-button:16px;
-$font-labels:14px;
+$font-term: 12px;
+$font-placeholder: 16px;
+$font-button: 16px;
+$font-labels: 14px;
+
+// heigh-header
+
+$header-nav-title-height: 60px;
+$header-nav-height: 45px;
+$header_tablet-desktop-nav: 60px;
 
 // colors
 $color-primary: #039ee1;
-$color-secondary:rgba(252, 155, 77, 0.5);
+$color-header-title: rgba(98, 201, 248, .5);
+$color-nav: rgba(252, 155, 77, 0.5);
 $color-light: #b8b8b9;
 $color-dark: #54585a;
 $color-white: #fff;
-$color-black:#000;
+$color-black: #000;
 $color-gray-background: #f1f1f1;
-
 
 // breakpoints
 $tablet: 768px;
-$desktop:1200px;
-
+$desktop: 1200px;
