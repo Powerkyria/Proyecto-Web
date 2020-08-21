@@ -17,8 +17,8 @@ footer {
 
 	.copy {
 		margin-bottom: 20px;
-		color: #b8b8b9;
-		font-style: 14px;
+		color: $color-light;
+		font-size: $font-size-small;
 		margin-top: 30px;
 
 		@include tablet {
@@ -56,10 +56,10 @@ footer {
 
 		a {
 			text-decoration: none;
-			color: #7a7c7e;
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 600;
-			font-size: 14px;
+			color: $color-dark;
+			font-family: $font-main;
+			font-weight: $font-main-weight-semibold;
+			font-size: $font-size-small;
 		}
 	}
 
