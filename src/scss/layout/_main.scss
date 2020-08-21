@@ -4,33 +4,30 @@
 	padding-bottom: 45px;
 	position: relative;
 	top: 34px;
-}
 
-p {
-	margin-left: 16px;
-	margin-right: 16px;
-	color: #54585a;
-	line-height: 1.6;
-	font-size: 16px;
-}
-
-h2 {
-	text-transform: uppercase;
-	color: rgb(3, 158, 225);
-	font-family: 'Rubik', sans-serif;
-	font-weight: 500;
-	font-style: 24px;
-}
-
-@media all and (min-width: 768px) {
-
-	.main__home {
+	@include tablet {
 		top: 0;
 		padding-bottom: 60px;
 	}
 
 	p {
-		margin-left: 45px;
-		margin-right: 45px;
-    }
+		margin-left: 16px;
+		margin-right: 16px;
+		color: $color-dark;
+		line-height: 1.6;
+		font-size: $font-size-text;
+
+		@include tablet {
+			margin-left: 45px;
+			margin-right: 45px;
+		}
+	}
+
+	h2 {
+		text-transform: uppercase;
+		color: $color-primary;
+		font-family: $font-secundary;
+		font-weight: $font-weigt-medium;
+		font-size: $font-size-title-section;
+	}
 }
