@@ -19,7 +19,7 @@
 		line-height: $header-nav-height;
 
 		@include tablet {
-			.header__nav--wrapper {
+			&--wrapper {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
@@ -57,7 +57,7 @@
 			}
 		}
 
-		.header__nav--ul {
+		&--ul {
 			list-style: none;
 			display: flex;
 			justify-content: space-evenly;
