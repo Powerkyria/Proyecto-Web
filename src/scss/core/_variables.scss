@@ -1,6 +1,19 @@
+
 // fonts
-$font-main: "Roboto", sans-serif;
+$font-main: 'Open Sans', sans-serif;
+$font-secundary: 'Rubik', sans-serif;
 
 // colors
-$color-white: #f3f4f5;
-$color-secondary: #999;
+$color-primary: #039ee1;
+$color-secondary:rgba(252, 155, 77, 0.5);
+$color-light: #b8b8b9;
+$color-dark: #54585a;
+$color-white: #fff;
+$color-black:#000;
+$color-gray-background: #f1f1f1;
+
+
+// breakpoints
+$tablet: 768px;
+$desktop:1200px;
+
