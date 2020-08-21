@@ -1,6 +1,6 @@
 body {
 	min-height: 100vh;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-family: $font-main;
+	font-weight: $font-main-weight-regular;
 	margin: 0;
 }
