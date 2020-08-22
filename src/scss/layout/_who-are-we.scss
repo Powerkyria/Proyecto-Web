@@ -16,6 +16,60 @@
 					width: 439px;
 				}
 			}
+
+			// TEST ANIMATION
+
+			&:nth-of-type(odd) {
+				@include desktop {
+					animation-duration: 2s;
+					animation-name: oddGear;
+					animation-iteration-count: 1;
+					animation-timing-function: ease;
+
+					@keyframes oddGear {
+						from {
+							transform: translateX(100vw);
+							-webkit-transform: translateX(100vw);
+							-moz-transform: translateX(100vw);
+							-ms-transform: translateX(100vw);
+							-o-transform: translateX(100vw);
+						}
+						to {
+							transform: translateX(0%);
+							-webkit-transform: translateX(0%);
+							-moz-transform: translateX(0%);
+							-ms-transform: translateX(0%);
+							-o-transform: translateX(0%);
+						}
+					}
+				}
+			}
+
+			&:nth-of-type(even) {
+				@include desktop {
+					animation-duration: 2s;
+					animation-name: evenGear;
+					animation-iteration-count: 1;
+					animation-timing-function: ease;
+
+					@keyframes evenGear {
+						from {
+							transform: translateX(-100vw);
+							-webkit-transform: translateX(-100vw);
+							-moz-transform: translateX(-100vw);
+							-ms-transform: translateX(-100vw);
+							-o-transform: translateX(-100vw);
+						}
+						to {
+							transform: translateX(0%);
+							-webkit-transform: translateX(0%);
+							-moz-transform: translateX(0%);
+							-ms-transform: translateX(0%);
+							-o-transform: translateX(0%);
+						}
+					}
+				}
+			}
 		}
 
 		& div:nth-of-type(even) {
