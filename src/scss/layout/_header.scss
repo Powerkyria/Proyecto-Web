@@ -46,6 +46,11 @@
 			font-size: $font-size-title;
 			margin: 0;
 
+			& a {
+				text-decoration: none;
+				color: $color-white;
+			}
+			
 			@include tablet {
 				padding: 0 45px;
 				width: 100%;
@@ -109,6 +114,7 @@
 				position: relative;
 
 				@include desktop {
+					
 					//  NAV EFFECT
 
 					&::before,
@@ -128,8 +134,8 @@
 					&::before {
 						right: 0;
 						top: 0;
-						border-right: 4px solid #00ffff;
-						border-top: 2px solid #00ffff;
+						border-right: 4px solid $color-nav-effect;
+						border-top: 2px solid $color-nav-effect;
 						transform: translate(0%, 50%);
 						-webkit-transform: translate(0%, 50%);
 						-moz-transform: translate(0%, 50%);
@@ -140,8 +146,8 @@
 					&::after {
 						left: 0;
 						bottom: 0;
-						border-left: 4px solid #00ffff;
-						border-bottom: 2px solid #00ffff;
+						border-left: 4px solid $color-nav-effect;
+						border-bottom: 2px solid $color-nav-effect;
 						transform: translate(100%, -50%);
 						-webkit-transform: translate(100%, -50%);
 						-moz-transform: translate(100%, -50%);
