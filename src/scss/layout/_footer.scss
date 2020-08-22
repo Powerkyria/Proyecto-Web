@@ -1,13 +1,23 @@
-footer {
-	text-align: center;
+footer{
+	border-top: 1px solid #7a7c7e;
 	position: relative;
 	top: 34px;
+
+
+	@include tablet{
+		top: 0;
+	}
+	
+.footer__wrapper{
+	text-align: center;
+	
+	
 
 	@include tablet {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
-		top: 0;
+		
 	}
 
 	@include desktop {
@@ -78,4 +88,5 @@ footer {
 			margin-left: 0;
 		}
 	}
+}
 }
