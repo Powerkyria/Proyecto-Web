@@ -19,7 +19,7 @@
 
 			// TEST ANIMATION
 
-			&:nth-of-type(odd) {
+			&:nth-of-type(1) {
 				@include desktop {
 					animation-duration: 2s;
 					animation-name: oddGear;
@@ -33,6 +33,7 @@
 							-moz-transform: translateX(100vw);
 							-ms-transform: translateX(100vw);
 							-o-transform: translateX(100vw);
+							opacity: 0;
 						}
 						to {
 							transform: translateX(0%);
@@ -45,7 +46,7 @@
 				}
 			}
 
-			&:nth-of-type(even) {
+			&:nth-of-type(2) {
 				@include desktop {
 					animation-duration: 2s;
 					animation-name: evenGear;
@@ -59,6 +60,7 @@
 							-moz-transform: translateX(-100vw);
 							-ms-transform: translateX(-100vw);
 							-o-transform: translateX(-100vw);
+							opacity: 0;
 						}
 						to {
 							transform: translateX(0%);
@@ -69,6 +71,13 @@
 						}
 					}
 				}
+			}
+
+			&:nth-of-type(3){
+				@extend .flex:nth-of-type(1)
+			}
+			&:nth-of-type(4){
+				@extend .flex:nth-of-type(2)
 			}
 		}
 
