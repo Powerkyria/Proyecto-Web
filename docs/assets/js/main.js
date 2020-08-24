@@ -1,1 +1,1 @@
-"use strict";
+"use strict";console.log("Hola");const user=document.querySelectorAll(".flex"),html=document.getElementsByTagName("html");function animation(){let e=html.scrollTop;console.log(e);for(let t=0;t<user.length;t++){let l=user[t].offsetTop;l<e&&(user[t].style.opacity=1),l-300<e&&user[t].classList.add("flex:nth-of-type(2)"),l-300<e&&user[t].classList.add("flex:nth-of-type(3)"),l-300<e&&user[t].classList.add("flex:nth-of-type(4)")}}window.addEventListener("scroll",animation);
