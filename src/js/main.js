@@ -1,10 +1,7 @@
 'use strict';
 
-console.log('Hola');
-
 const user = document.querySelectorAll('.flex');
 const html = document.getElementsByTagName('html');
-
 
 function animation() {
     let scrollTop = html.scrollTop;
