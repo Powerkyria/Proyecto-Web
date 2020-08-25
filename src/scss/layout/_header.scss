@@ -18,16 +18,15 @@
 		flex-direction: column;
 		line-height: $header-nav-height;
 
-		@include tablet {
-			&--wrapper {
+		&--wrapper {
+			@include tablet {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
-
-				@include desktop {
-					width: 924px;
-					margin: auto;
-				}
+			}
+			@include desktop {
+				width: 924px;
+				margin: auto;
 			}
 		}
 
@@ -46,11 +45,6 @@
 			font-size: $font-size-title;
 			margin: 0;
 
-			& a {
-				text-decoration: none;
-				color: $color-white;
-			}
-
 			@include tablet {
 				padding: 0 45px;
 				width: 100%;
@@ -59,6 +53,11 @@
 			@include desktop {
 				padding-left: 0;
 				background-color: transparent;
+			}
+
+			& a {
+				text-decoration: none;
+				color: $color-white;
 			}
 		}
 
@@ -114,7 +113,6 @@
 				position: relative;
 
 				@include desktop {
-					
 					//  NAV EFFECT
 
 					&::before,
@@ -169,66 +167,66 @@
 		}
 	}
 
-	@include desktop {
-		.header__claim--wrapper {
+	.header__claim--wrapper {
+		@include desktop {
 			width: 924px;
 			margin: auto;
 		}
-	}
 
-	.header__home--claim {
-		color: $color-black;
-		background-color: $color-white;
-		font-family: $font-main;
-		font-weight: $font-main-weight-semibold;
-		font-size: $font-size-claim-mobile;
-		margin: 0 15px;
-		padding: 15px;
-		text-align: center;
-		position: absolute;
-		bottom: -34px;
-		right: 0;
-		left: 0;
+		.header__home--claim {
+			color: $color-black;
+			background-color: $color-white;
+			font-family: $font-main;
+			font-weight: $font-main-weight-semibold;
+			font-size: $font-size-claim-mobile;
+			margin: 0 15px;
+			padding: 15px;
+			text-align: center;
+			position: absolute;
+			bottom: -34px;
+			right: 0;
+			left: 0;
 
-		@include tablet {
-			width: 441px;
-			padding: 15px 30px;
-			margin-left: 45px;
-			bottom: 0;
-		}
-
-		@include desktop {
-			font-size: $font-size-claim-desktop;
-			margin-left: 0;
-			right: auto;
-			left: auto;
-		}
-	}
-
-	// ANIMATION
-
-	@include desktop {
-		.phrase_animation {
-			animation-duration: 1s;
-			animation-name: motivation;
-			animation-iteration-count: 1;
-			animation-timing-function: ease;
-		}
-
-		@keyframes motivation {
-			from {
-				transform: translateX(51vw);
-				-webkit-transform: translateX(51vw);
-				-moz-transform: translateX(51vw);
-				-ms-transform: translateX(51vw);
-				-o-transform: translateX(51vw);
+			@include tablet {
+				width: 441px;
+				padding: 15px 30px;
+				margin-left: 45px;
+				bottom: 0;
 			}
-			to {
-				transform: translateX(0%);
-				-webkit-transform: translateX(0%);
-				-moz-transform: translateX(0%);
-				-ms-transform: translateX(0%);
-				-o-transform: translateX(0%);
+
+			@include desktop {
+				font-size: $font-size-claim-desktop;
+				margin-left: 0;
+				right: auto;
+				left: auto;
+			}
+		}
+
+		// ANIMATION
+
+		.phrase_animation {
+			@include desktop {
+				animation-duration: 1s;
+				animation-name: motivation;
+				animation-iteration-count: 1;
+				animation-timing-function: ease;
+			}
+
+			@keyframes motivation {
+				from {
+					transform: translateX(51vw);
+					-webkit-transform: translateX(51vw);
+					-moz-transform: translateX(51vw);
+					-ms-transform: translateX(51vw);
+					-o-transform: translateX(51vw);
+				}
+				to {
+					transform: translateX(0%);
+					-webkit-transform: translateX(0%);
+					-moz-transform: translateX(0%);
+					-ms-transform: translateX(0%);
+					-o-transform: translateX(0%);
+				}
 			}
 		}
 	}
