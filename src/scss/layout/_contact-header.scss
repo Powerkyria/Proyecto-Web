@@ -18,8 +18,8 @@
 			align-self: start;
 		}
 
-		@include tablet {
-			&--wrapper {
+		&--wrapper {
+			@include tablet {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
@@ -46,11 +46,6 @@
 			font-size: $font-size-title;
 			margin: 0;
 
-			& a {
-				text-decoration: none;
-				color: $color-white;
-			}
-
 			@include tablet {
 				padding: 0 45px;
 				width: 100%;
@@ -59,6 +54,11 @@
 			@include desktop {
 				padding-left: 0;
 				background-color: transparent;
+			}
+
+			& a {
+				text-decoration: none;
+				color: $color-white;
 			}
 		}
 
@@ -85,83 +85,83 @@
 				background-color: transparent;
 			}
 
-			@include tablet {
-				.header__nav--li {
+			.header__nav--li {
+				@include tablet {
 					margin-left: 30px;
 				}
-			}
 
-			.header__nav--li:hover {
-				transition: .1s;
-				-webkit-transition: .1s;
-				-moz-transition: .1s;
-				-ms-transition: .1s;
-				-o-transition: .1s;
-				transform: scale(1.1);
-				-webkit-transform: scale(1.1);
-				-moz-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				-o-transform: scale(1.1);
-			}
+				&:hover {
+					transition: .1s;
+					-webkit-transition: .1s;
+					-moz-transition: .1s;
+					-ms-transition: .1s;
+					-o-transition: .1s;
+					transform: scale(1.1);
+					-webkit-transform: scale(1.1);
+					-moz-transform: scale(1.1);
+					-ms-transform: scale(1.1);
+					-o-transform: scale(1.1);
+				}
 
-			.header__nav--a {
-				text-decoration: none;
-				padding: 4px;
-				color: $color-white;
-				font-family: $font-secundary;
-				font-weight: $font-weight-medium;
-				font-size: $font-size-nav;
-				position: relative;
+				.header__nav--a {
+					text-decoration: none;
+					padding: 4px;
+					color: $color-white;
+					font-family: $font-secundary;
+					font-weight: $font-weight-medium;
+					font-size: $font-size-nav;
+					position: relative;
 
-				@include desktop {
-					//  NAV EFFECT
+					@include desktop {
+						//  NAV EFFECT
 
-					&::before,
-					&::after {
-						height: 100%;
-						width: 100%;
-						position: absolute;
-						content: '';
-						transition: all ease 0.3s;
-						-webkit-transition: all ease 0.3s;
-						-moz-transition: all ease 0.3s;
-						-ms-transition: all ease 0.3s;
-						-o-transition: all ease 0.3s;
-						opacity: 0;
-					}
+						&::before,
+						&::after {
+							height: 100%;
+							width: 100%;
+							position: absolute;
+							content: '';
+							transition: all ease 0.3s;
+							-webkit-transition: all ease 0.3s;
+							-moz-transition: all ease 0.3s;
+							-ms-transition: all ease 0.3s;
+							-o-transition: all ease 0.3s;
+							opacity: 0;
+						}
 
-					&::before {
-						right: 0;
-						top: 0;
-						border-right: 4px solid $color-nav-effect;
-						border-top: 2px solid $color-nav-effect;
-						transform: translate(0%, 50%);
-						-webkit-transform: translate(0%, 50%);
-						-moz-transform: translate(0%, 50%);
-						-ms-transform: translate(0%, 50%);
-						-o-transform: translate(0%, 50%);
-					}
+						&::before {
+							right: 0;
+							top: 0;
+							border-right: 4px solid $color-nav-effect;
+							border-top: 2px solid $color-nav-effect;
+							transform: translate(0%, 50%);
+							-webkit-transform: translate(0%, 50%);
+							-moz-transform: translate(0%, 50%);
+							-ms-transform: translate(0%, 50%);
+							-o-transform: translate(0%, 50%);
+						}
 
-					&::after {
-						left: 0;
-						bottom: 0;
-						border-left: 4px solid $color-nav-effect;
-						border-bottom: 2px solid $color-nav-effect;
-						transform: translate(100%, -50%);
-						-webkit-transform: translate(100%, -50%);
-						-moz-transform: translate(100%, -50%);
-						-ms-transform: translate(100%, -50%);
-						-o-transform: translate(100%, -50%);
-					}
+						&::after {
+							left: 0;
+							bottom: 0;
+							border-left: 4px solid $color-nav-effect;
+							border-bottom: 2px solid $color-nav-effect;
+							transform: translate(100%, -50%);
+							-webkit-transform: translate(100%, -50%);
+							-moz-transform: translate(100%, -50%);
+							-ms-transform: translate(100%, -50%);
+							-o-transform: translate(100%, -50%);
+						}
 
-					&:hover::before,
-					&:hover::after {
-						transform: translate(0%, 0%);
-						-webkit-transform: translate(0%, 0%);
-						-moz-transform: translate(0%, 0%);
-						-ms-transform: translate(0%, 0%);
-						-o-transform: translate(0%, 0%);
-						opacity: 1;
+						&:hover::before,
+						&:hover::after {
+							transform: translate(0%, 0%);
+							-webkit-transform: translate(0%, 0%);
+							-moz-transform: translate(0%, 0%);
+							-ms-transform: translate(0%, 0%);
+							-o-transform: translate(0%, 0%);
+							opacity: 1;
+						}
 					}
 				}
 			}
