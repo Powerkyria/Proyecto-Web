@@ -50,7 +50,7 @@
 				text-decoration: none;
 				color: $color-white;
 			}
-			
+
 			@include tablet {
 				padding: 0 45px;
 				width: 100%;
@@ -207,9 +207,9 @@
 
 	// ANIMATION
 
-	@include tablet {
+	@include desktop {
 		.phrase_animation {
-			animation-duration: 1.5s;
+			animation-duration: 1s;
 			animation-name: motivation;
 			animation-iteration-count: 1;
 			animation-timing-function: ease;
@@ -217,11 +217,11 @@
 
 		@keyframes motivation {
 			from {
-				transform: translateX(100vw);
-				-webkit-transform: translateX(100vw);
-				-moz-transform: translateX(100vw);
-				-ms-transform: translateX(100vw);
-				-o-transform: translateX(100vw);
+				transform: translateX(51vw);
+				-webkit-transform: translateX(51vw);
+				-moz-transform: translateX(51vw);
+				-ms-transform: translateX(51vw);
+				-o-transform: translateX(51vw);
 			}
 			to {
 				transform: translateX(0%);
