@@ -1,5 +1,5 @@
 .team {
-	.team__title {
+	&__title {
 		margin-top: 30px;
 		margin-bottom: 15px;
 
@@ -8,7 +8,7 @@
 		}
 	}
 
-	.team p {
+	& p {
 		@include desktop {
 			width: 601px;
 			margin: auto;
@@ -16,7 +16,7 @@
 		}
 	}
 
-	.team p:nth-child(3) {
+	& p:nth-child(3) {
 		margin-bottom: 0;
 
 		@include tablet {
