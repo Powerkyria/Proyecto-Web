@@ -1,25 +1,27 @@
-.team__title {
-	margin-top: 30px;
-	margin-bottom: 15px;
-
-	@include tablet {
-		margin-top: 45px;
-	}
-}
-
-.team p:nth-child(3) {
-	margin-bottom: 0;
-
-	@include tablet {
-		margin-bottom: 45px;
-	}
-}
-
-@include desktop {
-	.team p {
-		width: 601px;
-		margin: auto;
+.team {
+	.team__title {
+		margin-top: 30px;
 		margin-bottom: 15px;
+
+		@include tablet {
+			margin-top: 45px;
+		}
+	}
+
+	.team p {
+		@include desktop {
+			width: 601px;
+			margin: auto;
+			margin-bottom: 15px;
+		}
+	}
+
+	.team p:nth-child(3) {
+		margin-bottom: 0;
+
+		@include tablet {
+			margin-bottom: 45px;
+		}
 	}
 }
 
