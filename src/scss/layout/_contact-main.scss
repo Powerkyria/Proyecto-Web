@@ -1,7 +1,7 @@
 .main__contact {
 	text-align: center;
 
-	form {
+	&--form {
 		display: flex;
 		flex-direction: column;
 		margin: 0 15px;
@@ -86,15 +86,20 @@
 				}
 			}
 		}
-		@include desktop {
-			.form_emailTel {
+
+		.form_emailTel {
+			@include desktop {
 				display: flex;
 				flex-direction: row;
-				.email {
+			}
+			.email {
+				@include desktop {
 					width: 395px;
 					margin-right: 44px;
 				}
-				.phone {
+			}
+			.phone {
+				@include desktop {
 					width: 162px;
 				}
 			}
