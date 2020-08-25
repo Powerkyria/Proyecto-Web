@@ -1,208 +1,211 @@
-@include tablet {
-	.who-are-we {
+.who-are-we {
+	@include tablet {
 		margin-left: 45px;
 		margin-right: 45px;
-
-		.flex {
-			display: flex;
-			align-items: center;
-			padding-bottom: 60px;
-
-			p {
-				text-align: left;
-				margin-right: 0;
-
-				@include desktop {
-					width: 439px;
-				}
-			}
-
-			// TEST ANIMATION
-
-			&:nth-of-type(1) {
-				@include desktop {
-					animation-duration: 2s;
-					animation-name: oddGear;
-					animation-iteration-count: 1;
-					animation-timing-function: ease;
-
-					@keyframes oddGear {
-						from {
-							transform: translateX(100vw);
-							-webkit-transform: translateX(100vw);
-							-moz-transform: translateX(100vw);
-							-ms-transform: translateX(100vw);
-							-o-transform: translateX(100vw);
-							opacity: 0;
-						}
-						to {
-							transform: translateX(0%);
-							-webkit-transform: translateX(0%);
-							-moz-transform: translateX(0%);
-							-ms-transform: translateX(0%);
-							-o-transform: translateX(0%);
-						}
-					}
-				}
-			}
-
-			&:nth-of-type(2) {
-				@include desktop {
-					animation-duration: 2s;
-					animation-name: evenGear;
-					animation-iteration-count: 1;
-					animation-timing-function: ease;
-
-					@keyframes evenGear {
-						from {
-							transform: translateX(-100vw);
-							-webkit-transform: translateX(-100vw);
-							-moz-transform: translateX(-100vw);
-							-ms-transform: translateX(-100vw);
-							-o-transform: translateX(-100vw);
-							opacity: 0;
-						}
-						to {
-							transform: translateX(0%);
-							-webkit-transform: translateX(0%);
-							-moz-transform: translateX(0%);
-							-ms-transform: translateX(0%);
-							-o-transform: translateX(0%);
-						}
-					}
-				}
-			}
-
-			&:nth-of-type(3){
-				@extend .flex:nth-of-type(1)
-			}
-			&:nth-of-type(4){
-				@extend .flex:nth-of-type(2)
-			}
-		}
-
-		& div:nth-of-type(even) {
-			flex-direction: row-reverse;
-
-			& div p {
-				text-align: right;
-				margin-left: 0;
-				margin-right: 45px;
-			}
-
-			& div ul {
-				justify-content: flex-end;
-			}
-		}
-
-		@include desktop {
-			width: 924px;
-			margin: auto;
-		}
-	}
-}
-
-.who-are-we__title {
-	margin: 45px;
-}
-
-// POLAROID EFFECT
-
-.polaroidContenedor {
-	margin: auto;
-	width: 202px;
-	padding: 10px 10px 0px 10px;
-	border: 1px solid #bfbfbf;
-	background-color: white;
-	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
-	margin-bottom: 40px;
-
-	@include tablet {
-		width: 227px;
-	}
-
-	.who-are-we__img {
-		width: 180px;
-		height: 220px;
-
-		@include tablet {
-			width: 205px;
-			height: 245px;
-		}
-
-		@include desktop {
-			width: 278px;
-			height: 318px;
-		}
-	}
-
-	.who-are-we__name {
-		color: $color-black;
-		font-size: $font-size-name;
-		margin-top: 8px;
-		margin-bottom: 12px;
-		font-style: italic;
-		font-family: $font-photo-names;
 	}
 
 	@include desktop {
-		width: 300px;
-		margin-left: 0;
-		margin-right: 0;
-
-		&__odd:hover {
-			transform: rotate(10deg);
-			-webkit-transform: rotate(10deg);
-			-moz-transform: rotate(10deg);
-			-ms-transform: rotate(10deg);
-			-o-transform: rotate(10deg);
-		}
-		&__even:hover {
-			transform: rotate(-10deg);
-			-webkit-transform: rotate(-10deg);
-			-moz-transform: rotate(-10deg);
-			-ms-transform: rotate(-10deg);
-			-o-transform: rotate(-10deg);
-		}
-	}
-}
-
-.who-are-we__social {
-	display: flex;
-	list-style: none;
-	justify-content: center;
-	margin-top: 30px;
-	margin-bottom: 60px;
-
-	& a:nth-child(odd) {
-		margin-left: 12px;
-		margin-right: 12px;
-		font-size: 24px;
-		color: $color-primary;
-		text-decoration: none;
-
-		&:hover {
-			color: $color-hover;
-			transform: scale(1.3);
-			-webkit-transform: scale(1.3);
-			-moz-transform: scale(1.3);
-			-ms-transform: scale(1.3);
-			-o-transform: scale(1.3);
-			transition: .1s;
-			-webkit-transition: .1s;
-			-moz-transition: .1s;
-			-ms-transition: .1s;
-			-o-transition: .1s;
-		}
+		width: 924px;
+		margin: auto;
 	}
 
-	@include tablet {
-		justify-content: start;
-		margin-left: 40px;
-		margin-right: 40px;
+	&__title {
+		margin: 45px;
 	}
 
-	.who-are-we__social--point {
-		color: $color-dark;
+	.flex {
+		@include tablet {
+			display: flex;
+			align-items: center;
+			padding-bottom: 60px;
+		}
+
+		@include desktop {
+			// USER ANIMATION
+			opacity: 0;
+			translate: all;
+		}
+
+		p {
+			@include tablet {
+				text-align: left;
+				margin-right: 0;
+			}
+			@include desktop {
+				width: 439px;
+			}
+		}
+
+		// POLAROID EFFECT
+
+		.polaroidContenedor {
+			margin: auto;
+			width: 202px;
+			padding: 10px 10px 0px 10px;
+			border: 1px solid #bfbfbf;
+			background-color: white;
+			box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+			margin-bottom: 40px;
+
+			@include tablet {
+				width: 227px;
+			}
+
+			@include desktop {
+				width: 300px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			&__odd:hover {
+				@include desktop {
+					transform: rotate(10deg);
+					-webkit-transform: rotate(10deg);
+					-moz-transform: rotate(10deg);
+					-ms-transform: rotate(10deg);
+					-o-transform: rotate(10deg);
+				}
+			}
+			&__even:hover {
+				@include desktop {
+					transform: rotate(-10deg);
+					-webkit-transform: rotate(-10deg);
+					-moz-transform: rotate(-10deg);
+					-ms-transform: rotate(-10deg);
+					-o-transform: rotate(-10deg);
+				}
+			}
+
+			.who-are-we__img {
+				width: 180px;
+				height: 220px;
+
+				@include tablet {
+					width: 205px;
+					height: 245px;
+				}
+
+				@include desktop {
+					width: 278px;
+					height: 318px;
+				}
+			}
+
+			.who-are-we__name {
+				color: $color-black;
+				font-size: $font-size-name;
+				margin-top: 8px;
+				margin-bottom: 12px;
+				font-style: italic;
+				font-family: $font-photo-names;
+			}
+		}
+
+		.who-are-we__social {
+			display: flex;
+			list-style: none;
+			justify-content: center;
+			margin-top: 30px;
+			margin-bottom: 60px;
+
+			& a:nth-child(odd) {
+				margin-left: 12px;
+				margin-right: 12px;
+				font-size: 24px;
+				color: $color-primary;
+				text-decoration: none;
+
+				&:hover {
+					color: $color-hover;
+					transform: scale(1.3);
+					-webkit-transform: scale(1.3);
+					-moz-transform: scale(1.3);
+					-ms-transform: scale(1.3);
+					-o-transform: scale(1.3);
+					transition: .1s;
+					-webkit-transition: .1s;
+					-moz-transition: .1s;
+					-ms-transition: .1s;
+					-o-transition: .1s;
+				}
+			}
+
+			@include tablet {
+				justify-content: start;
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+
+			&--point {
+				color: $color-dark;
+			}
+		}
+
+		&:nth-of-type(even) {
+			@include tablet {
+				flex-direction: row-reverse;
+			}
+			& p {
+				@include tablet {
+					text-align: right;
+					margin-left: 0;
+					margin-right: 45px;
+				}
+			}
+			& ul {
+				@include tablet {
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+
+	// USER ANIMATION
+
+	.user1 {
+		@include desktop {
+			animation-duration: 1.5s;
+			animation-name: oddGear;
+			animation-iteration-count: 1;
+			animation-timing-function: ease;
+
+			@keyframes oddGear {
+				from {
+					transform: translateX(30%);
+					-webkit-transform: translateX(30%);
+					-moz-transform: translateX(30%);
+					-ms-transform: translateX(30%);
+					-o-transform: translateX(30%);
+				}
+				to {
+					transform: translateX(0%);
+					-webkit-transform: translateX(0%);
+					-moz-transform: translateX(0%);
+					-ms-transform: translateX(0%);
+					-o-transform: translateX(0%);
+				}
+			}
+		}
+	}
+	.user2 {
+		@extend .user1;
+		animation-name: evenGear;
+
+		@keyframes evenGear {
+			from {
+				transform: translateX(-30%);
+				-webkit-transform: translateX(-30%);
+				-moz-transform: translateX(-30%);
+				-ms-transform: translateX(-30%);
+				-o-transform: translateX(-30%);
+			}
+		}
+	}
+
+	.user3 {
+		@extend .user1;
+	}
+	.user4 {
+		@extend .user2;
 	}
 }
