@@ -22,8 +22,13 @@
 
 		@include desktop {
 			// USER ANIMATION
+
+			transition: all 0.5s;
 			opacity: 0;
-			translate: all;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			-ms-transition: all 0.5s;
+			-o-transition: all 0.5s;
 		}
 
 		p {
@@ -161,51 +166,44 @@
 	}
 
 	// USER ANIMATION
+}
 
-	.user1 {
-		@include desktop {
-			animation-duration: 1.5s;
-			animation-name: oddGear;
-			animation-iteration-count: 1;
-			animation-timing-function: ease;
+.userOdd {
+	@include desktop {
+		animation-duration: 1.5s;
+		animation-name: oddGear;
+		animation-iteration-count: 1;
+		animation-timing-function: ease;
 
-			@keyframes oddGear {
-				from {
-					transform: translateX(30%);
-					-webkit-transform: translateX(30%);
-					-moz-transform: translateX(30%);
-					-ms-transform: translateX(30%);
-					-o-transform: translateX(30%);
-				}
-				to {
-					transform: translateX(0%);
-					-webkit-transform: translateX(0%);
-					-moz-transform: translateX(0%);
-					-ms-transform: translateX(0%);
-					-o-transform: translateX(0%);
-				}
-			}
-		}
-	}
-	.user2 {
-		@extend .user1;
-		animation-name: evenGear;
-
-		@keyframes evenGear {
+		@keyframes oddGear {
 			from {
-				transform: translateX(-30%);
-				-webkit-transform: translateX(-30%);
-				-moz-transform: translateX(-30%);
-				-ms-transform: translateX(-30%);
-				-o-transform: translateX(-30%);
+				transform: translateX(51vw);
+				-webkit-transform: translateX(51vw);
+				-moz-transform: translateX(51vw);
+				-ms-transform: translateX(51vw);
+				-o-transform: translateX(51vw);
+			}
+			to {
+				transform: translateX(0%);
+				-webkit-transform: translateX(0%);
+				-moz-transform: translateX(0%);
+				-ms-transform: translateX(0%);
+				-o-transform: translateX(0%);
 			}
 		}
 	}
+}
+.userEven {
+	@extend .userOdd;
+	animation-name: evenGear;
 
-	.user3 {
-		@extend .user1;
-	}
-	.user4 {
-		@extend .user2;
+	@keyframes evenGear {
+		from {
+			transform: translateX(-51vw);
+			-webkit-transform: translateX(-51vw);
+			-moz-transform: translateX(-51vw);
+			-ms-transform: translateX(-51vw);
+			-o-transform: translateX(-51vw);
+		}
 	}
 }
