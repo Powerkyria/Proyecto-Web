@@ -98,10 +98,12 @@
                 <h2 class="who-are-we__title">Quiénes somos</h2>
                 <div class="flex">
                     <div class="polaroidContenedor polaroidContenedor__odd">
-
-                        <img class="who-are-we__img " src="./assets/images/surf.jpg"
-                            alt="Silueta de chica sentada sobre tabla de surf salpicando agua hacia el cielo con sus manos, sobre un fondo de un atardecer anaranjado">
-
+                        <picture>
+                            <source type="image/webp" srcset="./assets/images/surf.webp">
+                            <source type="image/jpeg" srcset="./assets/images/surf.jpg">
+                            <img class="who-are-we__img " src="./assets/images/surf.jpg"
+                                alt="Silueta de chica sentada sobre tabla de surf salpicando agua hacia el cielo con sus manos, sobre un fondo de un atardecer anaranjado">
+                        </picture>
                         <h4 class="who-are-we__name">Nombre Apellido</h4>
                     </div>
                     <div>
@@ -126,10 +128,15 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="flex">
                     <div class="polaroidContenedor polaroidContenedor__even">
-                        <img class="who-are-we__img" src="./assets/images/skate.jpg"
-                            alt="Pie de chica sobre tabla de skate sobre tapa de alcantarilla redonda">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/images/skate.webp">
+                            <source type="image/jpeg" srcset="./assets/images/skate.jpg">
+                            <img class="who-are-we__img" src="./assets/images/skate.jpg"
+                                alt="Pie de chica sobre tabla de skate sobre tapa de alcantarilla redonda">
+                        </picture>
                         <h4 class="who-are-we__name">Nombre Apellido</h4>
                     </div>
                     <div>
@@ -157,8 +164,12 @@
 
                 <div class="flex">
                     <div class="polaroidContenedor polaroidContenedor__odd">
-                        <img class="who-are-we__img" src="./assets/images/vangirl.jpg"
-                            alt="Chica duchandose en el portón trasero de su furgo frente al mar al atardecer con un cielo amarillo de fondo">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/images/vangirl.webp">
+                            <source type="image/jpeg" srcset="./assets/images/vangirl.jpg">
+                            <img class="who-are-we__img" src="./assets/images/vangirl.jpg"
+                                alt="Chica duchandose en el portón trasero de su furgo frente al mar al atardecer con un cielo amarillo de fondo">
+                        </picture>
                         <h4 class="who-are-we__name">Nombre Apellido</h4>
                     </div>
                     <div>
@@ -185,8 +196,12 @@
                 </div>
                 <div class="flex">
                     <div class="polaroidContenedor polaroidContenedor__even">
-                        <img class="who-are-we__img polaroid" src="./assets/images/relax.jpg"
-                            alt="Chica descansando boca arriba sobre un mar en calma">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/images/relax.webp">
+                            <source type="image/jpeg" srcset="./assets/images/relax.jpg">
+                            <img class="who-are-we__img polaroid" src="./assets/images/relax.jpg"
+                                alt="Chica descansando boca arriba sobre un mar en calma">
+                        </picture>
                         <h4 class="who-are-we__name">Nombre Apellido</h4>
                     </div>
                     <div>
@@ -221,7 +236,9 @@
     </main>
     
     <footer>
+
       <div class="footer__wrapper">
+
         <div>
           <p class="copy">Powerkyria &copy 2020</p>
         </div>
@@ -233,8 +250,10 @@
           </li>
         </ul>
 
-        <img class="footer__logo" src="./assets/images/logo11.png" alt="">
+        <img class="footer__logo" src="./assets/images/logo11.png" alt="Logo en forma de ola azul">
+
       </div>
+
     </footer>
 
     <script src="./assets/js/main.js" type="text/javascript"></script>
