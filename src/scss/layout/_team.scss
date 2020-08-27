@@ -39,7 +39,7 @@
 }
 
 .features {
-	background-color: $color-gray-background;
+	background-color: darken($color-gray-background, 5%);
 	padding-top: 30px;
 	padding-bottom: 45px;
 

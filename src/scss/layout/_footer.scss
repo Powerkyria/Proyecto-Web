@@ -23,7 +23,7 @@ footer {
 
 		.copy {
 			margin-bottom: 20px;
-			color: $color-light;
+			color: darken($color-light, 20%);
 			font-size: $font-size-small;
 			margin-top: 30px;
 
