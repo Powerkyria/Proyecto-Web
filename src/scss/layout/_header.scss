@@ -207,6 +207,7 @@
 			}
 
 			@include desktop {
+				width: 520px;
 				font-size: $font-size-claim-desktop;
 				margin-left: 0;
 				right: auto;
