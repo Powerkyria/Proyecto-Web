@@ -1,8 +1,19 @@
 .header__img--contact {
-	background-image: url('../images/keyboard.jpeg');
+	background-image: url('../images/keyboardMobile.webp');
 	height: 300px;
 	background-size: cover;
 	margin-bottom: 30px;
+
+	body.no-webp {
+		background-image: url('../images/keyboardMobile.jpg');
+	}
+	@include tablet {
+		background-image: url('../images/keyboardTablet.webp');
+
+		body.no-webp {
+			background-image: url('../images/keyboardTablet.jpg');
+		}
+	}
 
 	@include desktop {
 		height: 400px;
