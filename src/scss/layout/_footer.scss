@@ -46,6 +46,7 @@ footer {
 			flex-direction: column;
 			text-transform: uppercase;
 			margin-bottom: 15px;
+			line-height: 2;
 
 			@include tablet {
 				line-height: 2.2;
