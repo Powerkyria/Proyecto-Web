@@ -119,6 +119,56 @@ src
 - [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
 - [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
 
-## Falta algo?
 
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+-------------------------------------------------------
+
+# RESIZE IMAGES
+
+![Imgur](https://i.imgur.com/GLMJvVf.png)
+
+# Demo
+
+1. down images w/ imagen
+2. instal npm i sharp
+
+```javascript
+const sharp = require('sharp');
+const fs = require('fs');
+const directory = './src/images';
+
+fs.readdirSync(directory).forEach(file => {
+  const name = file.split('.')[0];
+  console.log(file, name);
+});
+```
+
+```javascript
+const sharp = require('sharp');
+const fs = require('fs');
+const directory = './src/images';
+
+fs.readdirSync(directory).forEach(file => {
+  const name = file.split('.')[0];
+  sharp(`${directory}/${file}`)
+    .resize(180,220) // width,height
+    .toFile(`${directory}/${name}-small.jpg`);
+
+  sharp(`${directory}/${file}`)
+    .resize(205, 245) // width,height
+    .toFile(`${directory}/${name}-medium.jpg`);
+    
+  sharp(`${directory}/${file}`)
+    .resize(278, 318) // width,height
+    .toFile(`${directory}/${name}-big.jpg`);
+});
+```
+
+```html
+<picture>
+  <source srcset="assets/images/image-small.jpg" media="(max-width:  480px)" />
+  <source srcset="assets/images/image-medium.jpg" media="(max-width: 768px)" />
+  <source srcset="assets/images/image.jpg" media="(max-width: 1200px)" />
+  <img src="assets/images/image.jpg" />
+</picture>
+```
+

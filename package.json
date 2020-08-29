@@ -19,7 +19,8 @@
 		"gulp-sourcemaps": "*",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-zip": "*",
-		"run-sequence": "*"
+		"run-sequence": "*",
+		"sharp": "^0.26.0"
 	},
 	"devDependencies": {
 		"lodash.template": ">=4.5.0"
