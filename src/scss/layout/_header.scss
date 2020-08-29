@@ -203,11 +203,14 @@
 				width: 441px;
 				padding: 15px 30px;
 				margin-left: 45px;
+				margin-right: 0;
 				bottom: 0;
+				text-align: left;
+
 			}
 
 			@include desktop {
-				width: 520px;
+				width: 525px;
 				font-size: $font-size-claim-desktop;
 				margin-left: 0;
 				right: auto;
