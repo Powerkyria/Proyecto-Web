@@ -162,6 +162,7 @@ fs.readdirSync(directory).forEach(file => {
     .toFile(`${directory}/${name}-big.jpg`);
 });
 ```
+3. node resize.js
 
 ```html
 <picture>
@@ -171,4 +172,58 @@ fs.readdirSync(directory).forEach(file => {
   <img src="assets/images/image.jpg" />
 </picture>
 ```
+------------------------------------------------------------------------------------
 
+# COMPRESS IMAGES WHIT IMAGEMIN
+
+0. npm install --save-dev gulp-imagemin
+1. npm install imagemin-mozjpeg     ---> Para imagene jpg
+2. npm install imagemin-pngquant    ---> Para imagenes png
+
+
+
+![Imgur](https://i.imgur.com/imphVvI.png)
+
+```js
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
+const mozjpeg = require('imagemin-mozjpeg');
+	 
+gulp.task('imagemin', () => {
+  return gulp.src('src/assets/imgs/*')
+    .pipe(imagemin([
+      pngquant({quality: [0.5, 0.5]}),
+      mozjpeg({quality: 50}),
+    ]))
+    .pipe(gulp.dest('src/assets/imgs/'));
+});
+
+```
+3. gulp imagemin   ---> ejecutar tarea
+
+# WEBP IMAGES WHIT IMAGEMIN 
+
+1. npm i gulp-ext-replace --save-dev
+2. npm i imagemin-webp --save-dev
+
+![Imgur](https://i.imgur.com/FeAsPBW.png)
+
+```js
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
+const extReplace = require('gulp-ext-replace');
+const webp = require('imagemin-webp');
+	 
+
+gulp.task('webp', () => {
+  return gulp.src('src/imgs/*')
+    .pipe(imagemin([
+      webp({quality: 50})
+    ]))
+    .pipe(extReplace('.webp'))
+    .pipe(gulp.dest('src/imgs/'))
+});
+```
+gulp imagemin
+gulp webp
