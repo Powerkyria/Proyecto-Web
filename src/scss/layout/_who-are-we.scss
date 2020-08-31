@@ -81,6 +81,21 @@
 				}
 			}
 
+			.who-are-we__img {
+				width: 180px;
+				height: 220px;
+
+				@include tablet {
+					width: 205px;
+					height: 245px;
+				}
+
+				@include desktop {
+					width: 278px;
+					height: 318px;
+				}
+			}
+
 			.who-are-we__name {
 				color: $color-black;
 				font-size: $font-size-name;
@@ -167,7 +182,7 @@
 				-moz-transform: translateX(-51vw);
 				-ms-transform: translateX(-51vw);
 				-o-transform: translateX(-51vw);
-}
+			}
 			to {
 				transform: translateX(0%);
 				-webkit-transform: translateX(0%);
@@ -189,6 +204,6 @@
 			-moz-transform: translateX(51vw);
 			-ms-transform: translateX(51vw);
 			-o-transform: translateX(51vw);
-}
+		}
 	}
 }
