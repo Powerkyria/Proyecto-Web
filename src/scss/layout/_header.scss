@@ -1,28 +1,16 @@
 .header__img {
-	background-image: url('../images/roadMobile2.webp');
+	background-image: url('../images/roadMobile.webp');
 	height: 421px;
 	background-size: cover;
 	position: relative;
 
-	body.no-webp {
-		background-image: url('../images/roadMobile2.jpeg');
-	}
-
 	@include tablet {
 		background-image: url('../images/roadTablet.webp');
-
-		body.no-webp {
-			background-image: url('../images/roadTablet.jpeg');
-		}
 	}
 
 	@include desktop {
 		background-image: url('../images/roadDesktop.webp');
 		height: 550px;
-
-		body.no-webp {
-			background-image: url('../images/roadDesktop.jpeg');
-		}
 	}
 
 	.header__nav {
@@ -206,7 +194,6 @@
 				margin-right: 0;
 				bottom: 0;
 				text-align: left;
-
 			}
 
 			@include desktop {
