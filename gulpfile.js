@@ -138,3 +138,30 @@ gulp.task(
     done => done()
   )
 );
+
+// Compress whit imagemin
+
+const imagemin = require('gulp-imagemin');
+const mozjpeg = require('imagemin-mozjpeg');
+
+gulp.task('imagemin', () => {
+  return gulp.src('src/img/*')
+    .pipe(imagemin([
+     mozjpeg({quality: 90}),
+    ]))
+    .pipe(gulp.dest('src/images2/'));
+});
+
+// Webp
+
+const extReplace = require('gulp-ext-replace');
+const webp = require('imagemin-webp');
+
+gulp.task('webp', () => {
+  return gulp.src('src/img/*')
+    .pipe(imagemin([
+      webp({quality: 90})
+    ]))
+    .pipe(extReplace('.webp'))
+    .pipe(gulp.dest('src/images2/'))
+});

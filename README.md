@@ -166,9 +166,9 @@ fs.readdirSync(directory).forEach(file => {
 
 ```html
 <picture>
-  <source srcset="assets/images/image-small.jpg" media="(max-width:  480px)" />
-  <source srcset="assets/images/image-medium.jpg" media="(max-width: 768px)" />
-  <source srcset="assets/images/image.jpg" media="(max-width: 1200px)" />
+  <source srcset="assets/images/image-small.jpg" media="(max-width: 768px)" />
+  <source srcset="assets/images/image-medium.jpg" media="(max-width: 1200px)" />
+  <source srcset="assets/images/image.jpg" media="(max-width: 1440px)" />
   <img src="assets/images/image.jpg" />
 </picture>
 ```
@@ -225,5 +225,4 @@ gulp.task('webp', () => {
     .pipe(gulp.dest('src/imgs/'))
 });
 ```
-gulp imagemin
-gulp webp
+3. gulp webp   ---> ejecutar tarea
