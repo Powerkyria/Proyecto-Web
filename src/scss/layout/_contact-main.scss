@@ -52,10 +52,6 @@
 				font-size: $font-labels;
 			}
 
-			.email::placeholder {
-				color: $color-dark;
-			}
-
 			input {
 				height: $height-input;
 				border: 1px solid $color-light;
@@ -106,7 +102,7 @@
 		}
 
 		.send {
-			background: linear-gradient(rgb(98, 201, 248), $color-primary);
+			background-color: $color-button;
 			height: $height-button;
 			margin-bottom: 60px;
 			border: none;
@@ -122,7 +118,9 @@
 			text-transform: uppercase;
 
 			&:hover {
-				background: $color-button-hover;
+				background-color: darken($color-button,10%);
+				border: 1px solid #9BFC1D;
+				
 			}
 
 			@include tablet {
