@@ -4,15 +4,8 @@
 	background-size: cover;
 	margin-bottom: 30px;
 
-	body.no-webp {
-		background-image: url('../images/keyboardMobile.jpg');
-	}
 	@include tablet {
 		background-image: url('../images/keyboardTablet.webp');
-
-		body.no-webp {
-			background-image: url('../images/keyboardTablet.jpg');
-		}
 	}
 
 	@include desktop {
@@ -180,15 +173,13 @@
 	}
 
 	.arrow_return--contact {
-		font-size: 36px;
 		position: absolute;
-		top: 234px;
+		top: 246px;
 		right: 0px;
-		padding: 10px;
-		color: $color-arrow;
+		margin: 10px;
+		width: 40px;
 
 		&:hover {
-			color: $color-arrow-hover;
 			transform: scale(1.1);
 			-webkit-transform: scale(1.1);
 			-moz-transform: scale(1.1);
@@ -201,12 +192,9 @@
 			-o-transition: .3s;
 		}
 
-		@include tablet {
-			top: 234px;
-		}
-
 		@include desktop {
-			top: 333px;
+			width: 45px;
+			top: 341px;
 		}
 	}
 }
