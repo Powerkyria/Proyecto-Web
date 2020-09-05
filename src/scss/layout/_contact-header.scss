@@ -49,10 +49,12 @@
 			font-weight: $font-weight-medium;
 			font-size: $font-size-title;
 			margin: 0;
+			border-bottom: 1px solid #9BFC1D;
 
 			@include tablet {
 				padding: 0 45px;
 				width: 100%;
+				border-bottom: none;
 			}
 
 			@include desktop {
@@ -60,7 +62,7 @@
 				background-color: transparent;
 			}
 
-			& a {
+			a {
 				text-decoration: none;
 				color: $color-white;
 			}
