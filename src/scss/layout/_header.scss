@@ -44,7 +44,7 @@
 			font-weight: $font-weight-medium;
 			font-size: $font-size-title;
 			margin: 0;
-			border-bottom: 1px solid #9BFC1D;
+			border-bottom: 1px solid #9bfc1d;
 
 			@include tablet {
 				padding: 0 45px;
@@ -235,4 +235,7 @@
 			}
 		}
 	}
+}
+:root {
+	scroll-behavior: smooth;
 }
