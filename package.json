@@ -22,7 +22,7 @@
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-pngquant": "^9.0.0",
 		"run-sequence": "*",
-		"sharp": "^0.26.0"
+		"sharp": "^0.30.5"
 	},
 	"devDependencies": {
 		"gulp-ext-replace": "^0.3.0",
